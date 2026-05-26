@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cek Status Mutu Prodi secara gratis — Tools interaktif untuk menilai kesiapan akreditasi, kelengkapan SPMI, dan kesehatan sistem mutu program studi Anda.">
+<title>Cek Status Mutu Prodi — Tools Gratis | mutuperguruantinggi.id</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-900:#061A40;--navy-800:#0A2558;--navy-700:#143875;--navy-600:#1E5BA8;
+  --navy-100:#E8EEF8;--navy-50:#F4F7FC;
+  --gold-500:#FFC72C;--gold-400:#FFD55E;--gold-100:#FFF4D1;
+  --green-500:#2E9D5A;--green-100:#E6F5ED;
+  --red-500:#E53935;--red-100:#FDECEA;
+  --orange-500:#F57C00;--orange-100:#FFF3E0;
+  --white:#FFFFFF;--gray-900:#1A1A1A;--gray-700:#4A4A4A;--gray-500:#888888;
+  --gray-300:#D5D5D5;--gray-100:#F4F4F4;--gray-50:#FAFAFA;
+  --font-display:'Manrope',system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;
+  --shadow-sm:0 1px 2px rgba(10,37,88,.06),0 2px 4px rgba(10,37,88,.04);
+  --shadow-md:0 4px 6px rgba(10,37,88,.07),0 10px 20px rgba(10,37,88,.05);
+  --shadow-lg:0 10px 25px rgba(10,37,88,.12),0 20px 40px rgba(10,37,88,.08);
+  --max-w:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.2;color:var(--navy-800);letter-spacing:-.02em;}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+
+nav{background:var(--white);border-bottom:1px solid var(--navy-100);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max-w);margin:0 auto;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nav-logo img{height:38px;}
+.nav-logo span{font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--navy-800);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--gray-700);}
+.nav-links a:hover{color:var(--navy-800);}
+.nav-cta{background:var(--gold-500);color:var(--navy-900);padding:10px 20px;border-radius:var(--radius-sm);font-size:.9rem;font-weight:700;}
+
+.breadcrumb{background:var(--navy-50);border-bottom:1px solid var(--navy-100);padding:12px 0;}
+.breadcrumb-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--gray-500);}
+.breadcrumb-inner a{color:var(--navy-700);font-weight:600;}
+
+/* HERO TOOLS */
+.hero-tools{background:linear-gradient(135deg,var(--navy-900),var(--navy-700));padding:56px 0;text-align:center;}
+.tool-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-100);border:1px solid var(--green-500);color:var(--green-500);padding:7px 16px;border-radius:100px;font-size:.82rem;font-weight:700;margin-bottom:20px;}
+.hero-tools h1{font-size:clamp(1.8rem,4vw,2.5rem);color:var(--white);margin-bottom:14px;}
+.hero-tools h1 em{font-style:normal;color:var(--gold-500);}
+.hero-tools p{color:rgba(255,255,255,.75);font-size:.95rem;max-width:560px;margin:0 auto 24px;line-height:1.75;}
+.tool-meta{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;}
+.tool-meta-item{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.65);font-size:.82rem;}
+
+/* MULTI-STEP WRAPPER */
+.tool-wrapper{background:var(--navy-50);padding:56px 0 80px;}
+.tool-container{max-width:800px;margin:0 auto;}
+
+/* STEP INDICATOR */
+.step-indicator{display:flex;align-items:center;margin-bottom:40px;}
+.step-ind-item{display:flex;align-items:center;gap:8px;flex:1;}
+.step-ind-circle{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:.85rem;flex-shrink:0;}
+.step-ind-circle.done{background:var(--green-500);color:var(--white);}
+.step-ind-circle.active{background:var(--navy-800);color:var(--gold-500);}
+.step-ind-circle.pending{background:var(--gray-100);color:var(--gray-400);}
+.step-ind-label{font-size:.78rem;font-weight:600;}
+.step-ind-label.active{color:var(--navy-800);}
+.step-ind-label.done{color:var(--green-500);}
+.step-ind-label.pending{color:var(--gray-400);}
+.step-connector{flex:1;height:2px;background:var(--gray-200);margin:0 8px;max-width:60px;}
+.step-connector.done{background:var(--green-500);}
+
+/* STEP CARDS */
+.step-card{background:var(--white);border-radius:var(--radius-xl);padding:36px;box-shadow:var(--shadow-md);}
+.step-header{margin-bottom:28px;}
+.step-badge{display:inline-block;background:var(--navy-50);color:var(--navy-700);padding:5px 12px;border-radius:100px;font-size:.75rem;font-weight:700;margin-bottom:10px;}
+.step-card h2{font-size:1.3rem;color:var(--navy-800);margin-bottom:6px;}
+.step-desc{font-size:.875rem;color:var(--gray-500);}
+
+/* STEP 1: Identitas */
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
+.form-group label{font-size:.82rem;font-weight:600;color:var(--navy-800);}
+.form-group label span{color:var(--red-500);}
+.form-group input,.form-group select{border:1.5px solid var(--gray-300);border-radius:var(--radius-sm);padding:11px 14px;font-size:.9rem;font-family:var(--font-body);color:var(--gray-900);transition:.2s;}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--navy-600);box-shadow:0 0 0 3px rgba(30,91,168,.1);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+
+/* STEP 2: Checklist */
+.checklist-section{margin-bottom:28px;}
+.checklist-section-header{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--navy-50);border-radius:var(--radius-md);margin-bottom:12px;}
+.cs-icon{font-size:1.1rem;}
+.cs-title{font-family:var(--font-display);font-size:.95rem;color:var(--navy-800);font-weight:700;}
+.cs-count{margin-left:auto;font-size:.78rem;color:var(--gray-500);background:var(--white);padding:3px 10px;border-radius:100px;}
+.checklist-items{display:flex;flex-direction:column;gap:10px;}
+.check-item{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border:1.5px solid var(--gray-200);border-radius:var(--radius-md);cursor:pointer;transition:.2s;}
+.check-item:hover{border-color:var(--navy-300);background:var(--navy-50);}
+.check-item.checked{border-color:var(--green-500);background:var(--green-100);}
+.check-box{width:24px;height:24px;border-radius:6px;border:2px solid var(--gray-300);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s;margin-top:1px;}
+.check-item.checked .check-box{background:var(--green-500);border-color:var(--green-500);color:var(--white);font-size:.8rem;font-weight:700;}
+.check-text h5{font-size:.88rem;color:var(--navy-800);margin-bottom:2px;}
+.check-text p{font-size:.78rem;color:var(--gray-500);line-height:1.5;}
+.check-points{font-size:.72rem;font-weight:700;color:var(--navy-600);background:var(--navy-50);padding:2px 8px;border-radius:4px;margin-left:auto;flex-shrink:0;align-self:center;}
+.check-item.checked .check-points{background:var(--green-100);color:var(--green-500);}
+
+/* STEP 3: HASIL */
+.result-header{text-align:center;padding:28px;background:linear-gradient(135deg,var(--navy-800),var(--navy-700));border-radius:var(--radius-lg);margin-bottom:28px;color:var(--white);}
+.result-score-circle{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.1);border:6px solid var(--gold-500);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 16px;}
+.result-score-num{font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--gold-500);line-height:1;}
+.result-score-unit{font-size:.7rem;color:rgba(255,255,255,.6);}
+.result-level{font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin-bottom:6px;}
+.result-desc{font-size:.875rem;color:rgba(255,255,255,.75);}
+.result-bars{margin-bottom:24px;}
+.result-bar-item{margin-bottom:14px;}
+.result-bar-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.result-bar-label{font-size:.85rem;font-weight:600;color:var(--navy-800);}
+.result-bar-val{font-size:.82rem;font-weight:700;}
+.result-bar-track{height:10px;background:var(--gray-100);border-radius:5px;overflow:hidden;}
+.result-bar-fill{height:100%;border-radius:5px;}
+.fill-red{background:var(--red-500);}
+.fill-orange{background:var(--orange-500);}
+.fill-green{background:var(--green-500);}
+.fill-navy{background:var(--navy-600);}
+
+.recommendations{margin-bottom:24px;}
+.recommendations h3{font-size:1rem;color:var(--navy-800);margin-bottom:14px;}
+.rec-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.rec-item{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border-radius:var(--radius-md);background:var(--navy-50);}
+.rec-priority{font-size:.72rem;font-weight:700;padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.rec-priority.high{background:var(--red-100);color:var(--red-500);}
+.rec-priority.med{background:var(--orange-100);color:var(--orange-500);}
+.rec-priority.low{background:var(--green-100);color:var(--green-500);}
+.rec-text h5{font-size:.875rem;color:var(--navy-800);margin-bottom:2px;}
+.rec-text p{font-size:.78rem;color:var(--gray-700);line-height:1.5;}
+
+.download-gate{background:linear-gradient(135deg,var(--gold-100),var(--white));border:2px solid var(--gold-500);border-radius:var(--radius-lg);padding:28px;text-align:center;}
+.download-gate h3{font-size:1.05rem;color:var(--navy-800);margin-bottom:8px;}
+.download-gate p{font-size:.875rem;color:var(--gray-700);margin-bottom:20px;}
+.gate-form{display:grid;grid-template-columns:1fr auto;gap:10px;max-width:480px;margin:0 auto;}
+.gate-form input{border:1.5px solid var(--gray-300);border-radius:var(--radius-sm);padding:12px 16px;font-size:.9rem;font-family:var(--font-body);}
+.gate-form input:focus{outline:none;border-color:var(--navy-600);}
+.btn-download{background:var(--navy-800);color:var(--white);padding:12px 24px;border-radius:var(--radius-sm);font-weight:700;font-size:.875rem;border:none;cursor:pointer;font-family:var(--font-display);white-space:nowrap;}
+.btn-download:hover{background:var(--navy-700);}
+
+/* NAVIGATION BUTTONS */
+.step-nav{display:flex;justify-content:space-between;align-items:center;margin-top:28px;}
+.btn-prev{background:var(--gray-100);color:var(--gray-700);padding:12px 24px;border-radius:var(--radius-sm);font-weight:600;font-size:.9rem;border:none;cursor:pointer;font-family:var(--font-body);}
+.btn-next{background:var(--navy-800);color:var(--white);padding:13px 28px;border-radius:var(--radius-sm);font-weight:700;font-size:.9rem;border:none;cursor:pointer;font-family:var(--font-display);display:flex;align-items:center;gap:8px;transition:.2s;}
+.btn-next:hover{background:var(--navy-700);}
+.progress-text{font-size:.82rem;color:var(--gray-500);}
+
+/* TOOLS LIST */
+.other-tools{padding:56px 0;background:var(--white);}
+.section-label{font-size:.8rem;font-weight:700;color:var(--navy-600);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px;}
+.section-title{font-size:clamp(1.4rem,3vw,2rem);color:var(--navy-800);margin-bottom:16px;}
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px;}
+.tool-card{background:var(--navy-50);border-radius:var(--radius-lg);padding:24px;border:1px solid var(--navy-100);transition:.2s;}
+.tool-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.tool-card.active-tool{background:var(--navy-800);border-color:var(--navy-700);}
+.tool-card-icon{font-size:2rem;margin-bottom:12px;}
+.tool-card h4{font-size:1rem;color:var(--navy-800);margin-bottom:6px;}
+.tool-card.active-tool h4{color:var(--gold-500);}
+.tool-card p{font-size:.85rem;color:var(--gray-700);line-height:1.6;}
+.tool-card.active-tool p{color:rgba(255,255,255,.7);}
+.tool-card-status{display:inline-block;margin-top:12px;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:100px;}
+.tool-card-status.live{background:var(--green-100);color:var(--green-500);}
+.tool-card-status.coming{background:var(--gray-100);color:var(--gray-500);}
+.tool-card.active-tool .tool-card-status{background:var(--gold-500);color:var(--navy-900);}
+
+footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:40px 0 20px;}
+.footer-simple{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:24px;}
+.footer-brand h4{font-family:var(--font-display);color:var(--white);font-size:1.05rem;margin-bottom:4px;}
+.footer-brand p{font-size:.82rem;}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap;}
+.footer-links a{font-size:.85rem;}
+.footer-links a:hover{color:var(--gold-500);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:.8rem;text-align:center;}
+
+@media(max-width:700px){
+  .form-row,.gate-form{grid-template-columns:1fr;}
+  .tools-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:480px){.tools-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="LOGO-MUTU-PERGURUAN-TINGGI-17032025.png" alt="Logo" onerror="this.style.display='none'">
+      <span>mutuperguruantinggi.id</span>
+    </div>
+    <div class="nav-links">
+      <a href="redesign-mutuperguruantinggi.html">Beranda</a>
+      <a href="redesign-layanan.html">Layanan</a>
+      <a href="redesign-artikel.html">Artikel</a>
+      <a href="redesign-konsultasi-gratis.html" class="nav-cta">Konsultasi Gratis</a>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="redesign-mutuperguruantinggi.html">Beranda</a> <span>›</span>
+    <span>Tools</span> <span>›</span>
+    <span>Cek Status Mutu Prodi</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero-tools">
+  <div class="container">
+    <div class="tool-badge">🛠️ Tools Gratis · Hasil Instan</div>
+    <h1>Cek <em>Status Mutu Prodi</em><br>Anda Sekarang</h1>
+    <p>20 pertanyaan checklist mutu berbasis standar SPMI & BAN-PT. Dapatkan skor, analisis gap, dan rekomendasi prioritas dalam 5 menit.</p>
+    <div class="tool-meta">
+      <div class="tool-meta-item">⏱️ 5 menit penyelesaian</div>
+      <div class="tool-meta-item">📋 20 pertanyaan standar</div>
+      <div class="tool-meta-item">📊 Laporan langsung</div>
+      <div class="tool-meta-item">🔒 Data aman & privat</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOL MULTI-STEP -->
+<section class="tool-wrapper">
+  <div class="tool-container">
+
+    <!-- STEP INDICATOR -->
+    <div class="step-indicator">
+      <div class="step-ind-item">
+        <div class="step-ind-circle done">✓</div>
+        <div class="step-ind-label done">Identitas</div>
+      </div>
+      <div class="step-connector done"></div>
+      <div class="step-ind-item">
+        <div class="step-ind-circle active">2</div>
+        <div class="step-ind-label active">Checklist Mutu</div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step-ind-item">
+        <div class="step-ind-circle pending">3</div>
+        <div class="step-ind-label pending">Hasil & Rekomendasi</div>
+      </div>
+    </div>
+
+    <!-- STEP 1: Identitas (shown as completed preview) -->
+    <div class="step-card" style="margin-bottom:20px;border:1.5px solid var(--green-200);background:var(--green-100);">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:32px;height:32px;background:var(--green-500);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;flex-shrink:0;">✓</div>
+        <div>
+          <div style="font-weight:700;color:var(--green-500);font-size:.9rem;">Langkah 1 Selesai: Identitas Prodi</div>
+          <div style="font-size:.82rem;color:var(--gray-600);">Prodi: <strong>Manajemen — Universitas Contoh Jaya</strong> · Kaprodi: Dr. Budi Santoso</div>
+        </div>
+        <button style="margin-left:auto;background:transparent;border:1.5px solid var(--green-500);color:var(--green-500);padding:6px 14px;border-radius:var(--radius-sm);font-size:.78rem;font-weight:600;cursor:pointer;">Edit</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: CHECKLIST (Active) -->
+    <div class="step-card">
+      <div class="step-header">
+        <div class="step-badge">Langkah 2 dari 3</div>
+        <h2>📋 Checklist Status Mutu Prodi</h2>
+        <p class="step-desc">Centang semua kondisi yang sudah terpenuhi di prodi Anda saat ini. Jawab sejujurnya untuk hasil yang akurat.</p>
+      </div>
+
+      <!-- Kategori 1: Dokumen SPMI -->
+      <div class="checklist-section">
+        <div class="checklist-section-header">
+          <span class="cs-icon">📄</span>
+          <span class="cs-title">Dokumen & Kebijakan SPMI</span>
+          <span class="cs-count">0/5 terpenuhi</span>
+        </div>
+        <div class="checklist-items">
+          <div class="check-item checked" onclick="this.classList.toggle('checked')">
+            <div class="check-box">✓</div>
+            <div class="check-text">
+              <h5>Dokumen Kebijakan SPMI tersedia & terkini (≤2 tahun)</h5>
+              <p>Termasuk kebijakan mutu, manual mutu, dan standar mutu yang telah disahkan pimpinan</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item checked" onclick="this.classList.toggle('checked')">
+            <div class="check-box">✓</div>
+            <div class="check-text">
+              <h5>Siklus PPEPP terdokumentasi dan dilaksanakan secara berkala</h5>
+              <p>Bukti: laporan PPEPP minimal 2 siklus terakhir tersedia</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Standar mutu berbasis risiko sudah diimplementasikan</h5>
+              <p>Sesuai Permendiktisaintek No. 39/2025 tentang SPMI berbasis risiko</p>
+            </div>
+            <div class="check-points">+15</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Dokumen evaluasi diri prodi (EDS) tersedia dan diperbarui tahunan</h5>
+              <p>Digunakan sebagai basis peningkatan mutu berkelanjutan</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item checked" onclick="this.classList.toggle('checked')">
+            <div class="check-box">✓</div>
+            <div class="check-text">
+              <h5>SOP proses akademik dan administrasi prodi tersedia lengkap</h5>
+              <p>Minimal: SOP perkuliahan, pembimbingan TA, ujian, administrasi mahasiswa</p>
+            </div>
+            <div class="check-points">+5</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori 2: Kurikulum & OBE -->
+      <div class="checklist-section">
+        <div class="checklist-section-header">
+          <span class="cs-icon">📚</span>
+          <span class="cs-title">Kurikulum & Capaian Pembelajaran</span>
+          <span class="cs-count">1/4 terpenuhi</span>
+        </div>
+        <div class="checklist-items">
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Capaian Pembelajaran Lulusan (CPL) dirumuskan dan selaras dengan KKNI</h5>
+              <p>CPL mencakup aspek sikap, keterampilan umum, keterampilan khusus, dan pengetahuan</p>
+            </div>
+            <div class="check-points">+15</div>
+          </div>
+          <div class="check-item checked" onclick="this.classList.toggle('checked')">
+            <div class="check-box">✓</div>
+            <div class="check-text">
+              <h5>Pemetaan mata kuliah ke CPL tersedia (Course Mapping)</h5>
+              <p>Setiap mata kuliah memiliki kontribusi CPL yang terdokumentasi</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Asesmen autentik berbasis OBE diterapkan dalam perkuliahan</h5>
+              <p>Rubrik penilaian yang jelas dan mengukur pencapaian CPL</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Tracer study alumni dilakukan minimal setahun sekali</h5>
+              <p>Hasil digunakan untuk evaluasi dan pengembangan kurikulum</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori 3: AMI & Monitoring -->
+      <div class="checklist-section">
+        <div class="checklist-section-header">
+          <span class="cs-icon">🔍</span>
+          <span class="cs-title">Audit Mutu Internal & Monitoring</span>
+          <span class="cs-count">0/4 terpenuhi</span>
+        </div>
+        <div class="checklist-items">
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>AMI dilaksanakan minimal 1x per semester oleh auditor terlatih</h5>
+              <p>Auditor memiliki sertifikasi atau pelatihan AMI yang valid</p>
+            </div>
+            <div class="check-points">+15</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Tindak lanjut temuan AMI terdokumentasi dan diverifikasi</h5>
+              <p>Setiap temuan memiliki PIC, deadline, dan status (open/closed) yang terlacak</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Data kinerja dosen (beban mengajar, penelitian, pengabdian) terpantau</h5>
+              <p>Sistem monitoring kinerja dosen terintegrasi dengan SPMI</p>
+            </div>
+            <div class="check-points">+5</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Laporan kinerja prodi dilaporkan ke pimpinan minimal 1x/semester</h5>
+              <p>Mencakup IKU/IKT prodi, capaian CPL, kepuasan mahasiswa</p>
+            </div>
+            <div class="check-points">+5</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori 4: Akreditasi -->
+      <div class="checklist-section">
+        <div class="checklist-section-header">
+          <span class="cs-icon">🏆</span>
+          <span class="cs-title">Kesiapan Akreditasi</span>
+          <span class="cs-count">2/4 terpenuhi</span>
+        </div>
+        <div class="checklist-items">
+          <div class="check-item checked" onclick="this.classList.toggle('checked')">
+            <div class="check-box">✓</div>
+            <div class="check-text">
+              <h5>Status akreditasi prodi saat ini minimal "Baik" (BAN-PT / LAM)</h5>
+              <p>Akreditasi masih berlaku dan belum dalam masa jatuh tempo (≥1 tahun)</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item checked" onclick="this.classList.toggle('checked')">
+            <div class="check-box">✓</div>
+            <div class="check-text">
+              <h5>Data PDDIKTI prodi akurat dan terupdate (mahasiswa, dosen, lulusan)</h5>
+              <p>Tidak ada ketidaksesuaian data antara PDDIKTI dan data internal</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>LED (Laporan Evaluasi Diri) siap atau sedang disiapkan</h5>
+              <p>Dokumen LED mengacu instrumen akreditasi 4.0 terbaru</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+          <div class="check-item" onclick="this.classList.toggle('checked')">
+            <div class="check-box"></div>
+            <div class="check-text">
+              <h5>Tim peningkatan mutu prodi aktif bekerja (bukan hanya saat akreditasi)</h5>
+              <p>Ada struktur, jadwal rapat rutin, dan dokumentasi aktivitas mutu berkelanjutan</p>
+            </div>
+            <div class="check-points">+10</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-nav">
+        <button class="btn-prev">← Kembali</button>
+        <span class="progress-text">12/20 pertanyaan dijawab • Estimasi skor: 65/100</span>
+        <button class="btn-next">Lihat Hasil Saya →</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: HASIL (Preview / collapsed) -->
+    <div style="margin-top:24px;">
+      <div style="background:var(--gray-50);border:2px dashed var(--gray-200);border-radius:var(--radius-xl);padding:32px;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📊</div>
+        <h3 style="color:var(--gray-500);font-size:1rem;margin-bottom:6px;">Laporan Hasil Akan Muncul di Sini</h3>
+        <p style="font-size:.85rem;color:var(--gray-400);">Selesaikan checklist di atas untuk melihat skor, analisis gap, dan rekomendasi prioritas untuk prodi Anda.</p>
+      </div>
+    </div>
+
+    <!-- PREVIEW HASIL (shown as example) -->
+    <div style="margin-top:40px;">
+      <div style="text-align:center;margin-bottom:24px;">
+        <div class="section-label" style="justify-content:center;display:flex;">Preview Contoh Hasil</div>
+        <h3 style="font-size:1.1rem;color:var(--gray-500);">Beginilah tampilan hasil setelah Anda menyelesaikan checklist</h3>
+      </div>
+      <div class="step-card" style="border:2px solid var(--gold-200);">
+        <div style="position:absolute;top:16px;right:16px;background:var(--gold-100);color:#9A6800;padding:4px 10px;border-radius:4px;font-size:.72rem;font-weight:700;position:relative;float:right;">CONTOH HASIL</div>
+        <div class="result-header">
+          <div class="result-score-circle">
+            <div class="result-score-num">72</div>
+            <div class="result-score-unit">dari 100</div>
+          </div>
+          <div class="result-level">Status: Mutu Berkembang Baik</div>
+          <p class="result-desc">Prodi Anda memiliki fondasi SPMI yang baik, namun masih ada beberapa aspek yang perlu diperkuat sebelum siap mengajukan peningkatan akreditasi.</p>
+        </div>
+        <div class="result-bars">
+          <div class="result-bar-item">
+            <div class="result-bar-header">
+              <span class="result-bar-label">📄 Dokumen & Kebijakan SPMI</span>
+              <span class="result-bar-val" style="color:var(--green-500);">75/100</span>
+            </div>
+            <div class="result-bar-track"><div class="result-bar-fill fill-green" style="width:75%"></div></div>
+          </div>
+          <div class="result-bar-item">
+            <div class="result-bar-header">
+              <span class="result-bar-label">📚 Kurikulum & OBE</span>
+              <span class="result-bar-val" style="color:var(--orange-500);">55/100</span>
+            </div>
+            <div class="result-bar-track"><div class="result-bar-fill fill-orange" style="width:55%"></div></div>
+          </div>
+          <div class="result-bar-item">
+            <div class="result-bar-header">
+              <span class="result-bar-label">🔍 AMI & Monitoring</span>
+              <span class="result-bar-val" style="color:var(--red-500);">40/100</span>
+            </div>
+            <div class="result-bar-track"><div class="result-bar-fill fill-red" style="width:40%"></div></div>
+          </div>
+          <div class="result-bar-item">
+            <div class="result-bar-header">
+              <span class="result-bar-label">🏆 Kesiapan Akreditasi</span>
+              <span class="result-bar-val" style="color:var(--navy-600);">80/100</span>
+            </div>
+            <div class="result-bar-track"><div class="result-bar-fill fill-navy" style="width:80%"></div></div>
+          </div>
+        </div>
+        <div class="recommendations">
+          <h3>🎯 Rekomendasi Prioritas</h3>
+          <ul class="rec-list">
+            <li class="rec-item">
+              <span class="rec-priority high">🔴 Prioritas Tinggi</span>
+              <div class="rec-text">
+                <h5>Implementasi AMI Digital & Tindak Lanjut Terstruktur</h5>
+                <p>Skor AMI & Monitoring masih rendah (40%). Segera implementasikan sistem AMI yang terstruktur dengan tindak lanjut terdokumentasi.</p>
+              </div>
+            </li>
+            <li class="rec-item">
+              <span class="rec-priority med">🟡 Prioritas Sedang</span>
+              <div class="rec-text">
+                <h5>Penguatan Kurikulum Berbasis OBE</h5>
+                <p>Pemetaan CPL dan asesmen autentik perlu diperkuat. Rekomendasikan pelatihan TOT OBE untuk tim dosen.</p>
+              </div>
+            </li>
+            <li class="rec-item">
+              <span class="rec-priority low">🟢 Pertahankan</span>
+              <div class="rec-text">
+                <h5>Dokumen SPMI & Kesiapan Akreditasi</h5>
+                <p>Kedua aspek ini sudah baik. Pertahankan pembaruan berkala dan pastikan dokumen selalu terkini.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="download-gate">
+          <h3>📥 Download Laporan Lengkap (PDF)</h3>
+          <p>Laporan detail 12 halaman termasuk analisis per indikator, benchmark, dan action plan siap download gratis.</p>
+          <div class="gate-form">
+            <input type="email" placeholder="Email institusi Anda (nama@kampus.ac.id)">
+            <button class="btn-download">Download Gratis →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER TOOLS -->
+<section class="other-tools">
+  <div class="container">
+    <div class="section-label">Tools Lainnya</div>
+    <h2 class="section-title">Lebih Banyak Tools Gratis untuk Kampus Anda</h2>
+    <div class="tools-grid">
+      <div class="tool-card active-tool">
+        <div class="tool-card-icon">🎓</div>
+        <h4>Cek Status Mutu Prodi</h4>
+        <p>20 pertanyaan untuk mengukur kesiapan SPMI, OBE, AMI, dan akreditasi program studi Anda.</p>
+        <div class="tool-card-status">✓ Sedang Digunakan</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-icon">🏛️</div>
+        <h4>Cek Status Mutu PT</h4>
+        <p>Assessment level universitas — mengukur kematangan sistem mutu institusi secara keseluruhan.</p>
+        <div class="tool-card-status live">✓ Tersedia</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-card-icon">📊</div>
+        <h4>Kalkulator Skor Akreditasi</h4>
+        <p>Estimasi skor akreditasi BAN-PT 4.0 berdasarkan data prodi yang Anda input. Identifikasi area lemah sebelum visitasi.</p>
+        <div class="tool-card-status coming">🔧 Segera Hadir</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-simple">
+      <div class="footer-brand">
+        <h4>mutuperguruantinggi.id</h4>
+        <p>Platform mutu perguruan tinggi Indonesia. © 2026 PT Padma Global Nusatama.</p>
+      </div>
+      <div class="footer-links">
+        <a href="redesign-layanan.html">Layanan</a>
+        <a href="redesign-paket.html">Paket</a>
+        <a href="redesign-tentang.html">Tentang</a>
+        <a href="redesign-artikel.html">Artikel</a>
+        <a href="redesign-konsultasi-gratis.html">Konsultasi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#" style="color:var(--gold-500);">Kebijakan Privasi</a> &nbsp;·&nbsp;
+      <a href="#" style="color:var(--gold-500);">Syarat & Ketentuan</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

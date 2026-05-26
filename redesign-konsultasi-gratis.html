@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Konsultasi gratis mutu perguruan tinggi bersama pakar SPMI, AMI, OBE, dan akreditasi terpercaya. Jadwalkan sesi konsultasi Anda sekarang — tanpa biaya, tanpa komitmen.">
+<title>Konsultasi Gratis Mutu Perguruan Tinggi | mutuperguruantinggi.id</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Konsultasi Gratis Mutu Perguruan Tinggi",
+  "description": "Sesi konsultasi gratis 45 menit bersama pakar SPMI, AMI, OBE, dan akreditasi",
+  "provider": { "@type": "Organization", "name": "mutuperguruantinggi.id" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IDR" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-900:#061A40;--navy-800:#0A2558;--navy-700:#143875;--navy-600:#1E5BA8;
+  --navy-100:#E8EEF8;--navy-50:#F4F7FC;
+  --gold-500:#FFC72C;--gold-400:#FFD55E;--gold-100:#FFF4D1;
+  --green-500:#2E9D5A;--green-100:#E6F5ED;
+  --white:#FFFFFF;--gray-900:#1A1A1A;--gray-700:#4A4A4A;--gray-500:#888888;
+  --gray-300:#D5D5D5;--gray-100:#F4F4F4;--gray-50:#FAFAFA;
+  --font-display:'Manrope',system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;
+  --shadow-sm:0 1px 2px rgba(10,37,88,.06),0 2px 4px rgba(10,37,88,.04);
+  --shadow-md:0 4px 6px rgba(10,37,88,.07),0 10px 20px rgba(10,37,88,.05);
+  --shadow-lg:0 10px 25px rgba(10,37,88,.12),0 20px 40px rgba(10,37,88,.08);
+  --max-w:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.2;color:var(--navy-800);letter-spacing:-.02em;}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+
+nav{background:var(--white);border-bottom:1px solid var(--navy-100);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max-w);margin:0 auto;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nav-logo img{height:38px;}
+.nav-logo span{font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--navy-800);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--gray-700);}
+.nav-cta{background:var(--gold-500);color:var(--navy-900);padding:10px 20px;border-radius:var(--radius-sm);font-size:.9rem;font-weight:700;}
+
+/* HERO KONSULTASI */
+.hero-konsul{background:linear-gradient(135deg,var(--navy-900) 0%,var(--navy-700) 100%);padding:64px 0;}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+.free-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-100);border:1px solid var(--green-500);color:var(--green-500);padding:8px 16px;border-radius:100px;font-size:.85rem;font-weight:700;margin-bottom:20px;}
+.hero-title{font-family:var(--font-display);font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;color:var(--white);line-height:1.15;margin-bottom:16px;}
+.hero-title em{font-style:normal;color:var(--gold-500);}
+.hero-desc{color:rgba(255,255,255,.78);font-size:1rem;line-height:1.75;margin-bottom:28px;}
+.consult-benefits{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.consult-benefits li{display:flex;align-items:flex-start;gap:12px;color:rgba(255,255,255,.88);font-size:.925rem;}
+.cb-icon{width:28px;height:28px;background:var(--green-500);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0;}
+.expert-photos{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px;align-items:center;}
+.expert-photo{width:48px;height:48px;border-radius:50%;background:var(--navy-600);border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:.85rem;color:var(--white);}
+.expert-photo:nth-child(2n){background:var(--navy-700);}
+.expert-photo:nth-child(3n){background:var(--gold-500);color:var(--navy-900);}
+.expert-label{color:rgba(255,255,255,.65);font-size:.82rem;}
+
+/* FORM CARD */
+.form-card{background:var(--white);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);padding:36px;position:sticky;top:80px;}
+.form-card h3{font-size:1.15rem;color:var(--navy-800);margin-bottom:8px;}
+.form-subtitle{font-size:.85rem;color:var(--gray-500);margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--gray-100);}
+.form-subtitle strong{color:var(--green-500);}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.form-group label{font-size:.82rem;font-weight:600;color:var(--navy-800);}
+.form-group label span{color:#E53935;}
+.form-group input,.form-group select,.form-group textarea{border:1.5px solid var(--gray-300);border-radius:var(--radius-sm);padding:11px 14px;font-size:.9rem;font-family:var(--font-body);color:var(--gray-900);transition:.2s;background:var(--white);}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--navy-600);box-shadow:0 0 0 3px rgba(30,91,168,.1);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px;}
+.topic-option{position:relative;}
+.topic-option input[type="radio"]{position:absolute;opacity:0;width:0;}
+.topic-label{display:block;padding:9px 12px;border:2px solid var(--gray-200);border-radius:var(--radius-sm);font-size:.82rem;cursor:pointer;transition:.2s;text-align:center;font-weight:500;}
+.topic-option input[type="radio"]:checked + .topic-label{background:var(--navy-50);border-color:var(--navy-700);color:var(--navy-800);font-weight:600;}
+.topic-label:hover{border-color:var(--navy-300);background:var(--navy-50);}
+.btn-submit{width:100%;background:var(--gold-500);color:var(--navy-900);padding:15px 24px;border-radius:var(--radius-md);font-family:var(--font-display);font-weight:700;font-size:1rem;border:none;cursor:pointer;transition:.2s;margin-top:8px;}
+.btn-submit:hover{background:var(--gold-400);}
+.form-guarantee{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--gray-500);margin-top:12px;justify-content:center;}
+.form-guarantee span{font-size:1rem;}
+
+/* WHAT YOU GET */
+.what-get{padding:72px 0;background:var(--navy-50);}
+.section-label{font-size:.8rem;font-weight:700;color:var(--navy-600);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px;}
+.section-title{font-size:clamp(1.6rem,3vw,2.2rem);color:var(--navy-800);margin-bottom:16px;}
+.get-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px;}
+.get-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;display:flex;align-items:flex-start;gap:16px;box-shadow:var(--shadow-sm);}
+.get-icon{width:48px;height:48px;background:var(--navy-800);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;}
+.get-card h4{font-size:.95rem;color:var(--navy-800);margin-bottom:6px;}
+.get-card p{font-size:.85rem;color:var(--gray-700);line-height:1.6;}
+
+/* PAKAR YANG MENANGANI */
+.pakar-section{padding:72px 0;background:var(--white);}
+.pakar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;}
+.pakar-mini{background:var(--gray-50);border-radius:var(--radius-lg);padding:20px;text-align:center;border:1px solid var(--navy-100);transition:.2s;}
+.pakar-mini:hover{box-shadow:var(--shadow-md);border-color:var(--navy-200);}
+.pakar-avatar{width:64px;height:64px;border-radius:50%;background:var(--navy-700);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;color:var(--white);font-size:1rem;margin:0 auto 12px;}
+.pakar-mini h4{font-size:.875rem;color:var(--navy-800);margin-bottom:4px;}
+.pakar-mini p{font-size:.78rem;color:var(--gray-500);line-height:1.5;}
+.pakar-tags{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;margin-top:8px;}
+.pakar-tag{background:var(--navy-50);color:var(--navy-700);padding:3px 8px;border-radius:4px;font-size:.68rem;font-weight:700;}
+
+/* PROCESS */
+.process{padding:72px 0;background:var(--navy-50);}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;position:relative;}
+.process-steps::before{content:'';position:absolute;top:28px;left:12%;right:12%;height:2px;background:var(--navy-100);}
+.proc-step{text-align:center;position:relative;z-index:1;}
+.proc-num{width:56px;height:56px;background:var(--navy-800);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;font-weight:800;color:var(--gold-500);margin:0 auto 14px;border:3px solid var(--white);box-shadow:var(--shadow-md);}
+.proc-step h4{font-size:.9rem;color:var(--navy-800);margin-bottom:6px;}
+.proc-step p{font-size:.8rem;color:var(--gray-700);line-height:1.55;}
+
+/* TESTIMONI */
+.testi{padding:72px 0;background:var(--white);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
+.testi-card{background:var(--navy-50);border-radius:var(--radius-lg);padding:24px;border-left:3px solid var(--gold-500);}
+.testi-stars{color:var(--gold-500);font-size:.9rem;margin-bottom:10px;}
+.testi-text{font-size:.875rem;color:var(--gray-700);line-height:1.7;font-style:italic;margin-bottom:14px;}
+.testi-author{display:flex;align-items:center;gap:10px;}
+.testi-av{width:38px;height:38px;border-radius:50%;background:var(--navy-700);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:var(--white);}
+.testi-name{font-size:.85rem;font-weight:700;color:var(--navy-800);}
+.testi-role{font-size:.75rem;color:var(--gray-500);}
+
+/* FAQ */
+.faq{padding:72px 0;background:var(--navy-50);}
+.faq-list{max-width:720px;margin:36px auto 0;display:flex;flex-direction:column;gap:10px;}
+.faq-item{background:var(--white);border-radius:var(--radius-md);border:1px solid var(--navy-100);padding:18px 20px;}
+.faq-item h4{font-size:.92rem;color:var(--navy-800);margin-bottom:6px;}
+.faq-item p{font-size:.85rem;color:var(--gray-700);line-height:1.65;}
+
+footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:40px 0 20px;}
+.footer-simple{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:24px;}
+.footer-brand h4{font-family:var(--font-display);color:var(--white);font-size:1.05rem;margin-bottom:4px;}
+.footer-brand p{font-size:.82rem;}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap;}
+.footer-links a{font-size:.85rem;transition:.2s;}
+.footer-links a:hover{color:var(--gold-500);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:.8rem;text-align:center;}
+
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .form-card{position:static;}
+  .get-grid,.testi-grid{grid-template-columns:1fr 1fr;}
+  .pakar-grid{grid-template-columns:1fr 1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;}
+  .process-steps::before{display:none;}
+}
+@media(max-width:580px){
+  .get-grid,.testi-grid,.pakar-grid{grid-template-columns:1fr;}
+  .form-row,.topic-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="LOGO-MUTU-PERGURUAN-TINGGI-17032025.png" alt="Logo" onerror="this.style.display='none'">
+      <span>mutuperguruantinggi.id</span>
+    </div>
+    <div class="nav-links">
+      <a href="redesign-mutuperguruantinggi.html">Beranda</a>
+      <a href="redesign-layanan.html">Layanan</a>
+      <a href="redesign-event-listing.html">Event</a>
+      <a href="redesign-artikel.html">Artikel</a>
+      <a href="redesign-konsultasi-gratis.html" class="nav-cta">Konsultasi Gratis</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO + FORM -->
+<section class="hero-konsul">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="free-badge">✅ GRATIS · Tanpa Komitmen · 45 Menit</div>
+        <h1 class="hero-title">Konsultasi Gratis<br>dengan <em>Pakar Mutu</em><br>Perguruan Tinggi</h1>
+        <p class="hero-desc">Diskusikan tantangan mutu, akreditasi, SPMI, OBE, atau tata kelola kampus Anda langsung dengan pakar berpengalaman. Tanpa biaya, tanpa tekanan.</p>
+        <ul class="consult-benefits">
+          <li>
+            <div class="cb-icon">🎯</div>
+            <div><strong>Analisis kebutuhan spesifik</strong> kampus Anda berdasarkan kondisi aktual SPMI dan akreditasi</div>
+          </li>
+          <li>
+            <div class="cb-icon">🗺️</div>
+            <div><strong>Roadmap implementasi</strong> yang realistis dan sesuai kapasitas SDM dan anggaran kampus</div>
+          </li>
+          <li>
+            <div class="cb-icon">📋</div>
+            <div><strong>Rekomendasi layanan</strong> yang paling relevan — tanpa upsell berlebihan</div>
+          </li>
+          <li>
+            <div class="cb-icon">📄</div>
+            <div><strong>Dokumen ringkasan</strong> hasil konsultasi yang bisa Anda bawa ke rapat pimpinan</div>
+          </li>
+        </ul>
+        <div class="expert-photos" style="margin-top:28px;">
+          <div class="expert-photo">AY</div>
+          <div class="expert-photo">JK</div>
+          <div class="expert-photo">NS</div>
+          <div class="expert-photo">RD</div>
+          <div class="expert-photo">+8</div>
+          <span class="expert-label">12 pakar siap membantu Anda</span>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="form-card">
+        <h3>📅 Jadwalkan Konsultasi Gratis</h3>
+        <p class="form-subtitle">Respon dalam <strong>1×24 jam kerja</strong>. Tidak ada kewajiban setelah sesi.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nama Lengkap <span>*</span></label>
+            <input type="text" placeholder="Dr. / Prof. Nama Anda">
+          </div>
+          <div class="form-group">
+            <label>Jabatan <span>*</span></label>
+            <input type="text" placeholder="Ketua LPM / Rektor">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Perguruan Tinggi <span>*</span></label>
+          <input type="text" placeholder="Nama universitas / institut Anda">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Institusi <span>*</span></label>
+            <input type="email" placeholder="nama@kampus.ac.id">
+          </div>
+          <div class="form-group">
+            <label>WhatsApp Aktif <span>*</span></label>
+            <input type="tel" placeholder="+62 8xx xxxx xxxx">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Topik yang Ingin Dikonsultasikan <span>*</span></label>
+          <div class="topic-grid">
+            <div class="topic-option">
+              <input type="radio" name="topic" id="t-spmi">
+              <label class="topic-label" for="t-spmi">SPMI / ISO 21001</label>
+            </div>
+            <div class="topic-option">
+              <input type="radio" name="topic" id="t-ami">
+              <label class="topic-label" for="t-ami">AMI / Audit Mutu</label>
+            </div>
+            <div class="topic-option">
+              <input type="radio" name="topic" id="t-obe">
+              <label class="topic-label" for="t-obe">OBE / Kurikulum</label>
+            </div>
+            <div class="topic-option">
+              <input type="radio" name="topic" id="t-akred">
+              <label class="topic-label" for="t-akred">Akreditasi</label>
+            </div>
+            <div class="topic-option">
+              <input type="radio" name="topic" id="t-iso">
+              <label class="topic-label" for="t-iso">ISO 9001 / Lab</label>
+            </div>
+            <div class="topic-option">
+              <input type="radio" name="topic" id="t-other">
+              <label class="topic-label" for="t-other">Lainnya</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Preferensi Tanggal Konsultasi</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Ceritakan Tantangan Utama Kampus Anda</label>
+          <textarea rows="3" placeholder="Misalnya: Kami baru implementasi SPMI, masih kesulitan dengan dokumen berbasis risiko dan siklus PPEPP..."></textarea>
+        </div>
+        <button class="btn-submit">📅 Jadwalkan Konsultasi Gratis →</button>
+        <div class="form-guarantee">
+          <span>🔒</span>
+          Data Anda aman dan tidak akan dibagikan ke pihak ketiga
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="what-get">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">Yang Anda Dapatkan</div>
+      <h2 class="section-title">Apa yang Terjadi dalam Sesi Konsultasi?</h2>
+      <p style="color:var(--gray-700);font-size:.95rem;">Sesi 45 menit dirancang agar Anda pulang dengan actionable insights, bukan sekadar presentasi layanan.</p>
+    </div>
+    <div class="get-grid">
+      <div class="get-card">
+        <div class="get-icon">🔍</div>
+        <div>
+          <h4>Assessment Kondisi Mutu Terkini</h4>
+          <p>Pakar akan memetakan kondisi SPMI, akreditasi, dan tata kelola kampus Anda berdasarkan dokumen & informasi yang Anda sampaikan.</p>
+        </div>
+      </div>
+      <div class="get-card">
+        <div class="get-icon">🗺️</div>
+        <div>
+          <h4>Roadmap Prioritas 6-12 Bulan</h4>
+          <p>Rekomendasi langkah konkret yang bisa dieksekusi segera, disesuaikan dengan kalender akademik dan kapasitas tim Anda.</p>
+        </div>
+      </div>
+      <div class="get-card">
+        <div class="get-icon">⚠️</div>
+        <div>
+          <h4>Identifikasi Gap & Risiko</h4>
+          <p>Kami akan mengidentifikasi gap antara kondisi saat ini dengan standar yang berlaku, termasuk risiko yang perlu segera dimitigasi.</p>
+        </div>
+      </div>
+      <div class="get-card">
+        <div class="get-icon">📋</div>
+        <div>
+          <h4>Dokumen Ringkasan Konsultasi</h4>
+          <p>Setelah sesi, Anda menerima notulensi digital berisi poin-poin diskusi, rekomendasi, dan referensi regulasi relevan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAKAR -->
+<section class="pakar-section">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">Tim Konsultan</div>
+      <h2 class="section-title">12 Pakar Siap Mendampingi Anda</h2>
+      <p style="color:var(--gray-700);font-size:.95rem;">Setiap pakar kami tersertifikasi, berpengalaman langsung sebagai praktisi di perguruan tinggi — bukan hanya teoritisi.</p>
+    </div>
+    <div class="pakar-grid">
+      <div class="pakar-mini">
+        <div class="pakar-avatar" style="background:#1E5BA8;">AY</div>
+        <h4>Dr. Agung Yulianto, M.Si.</h4>
+        <p>Wakil Dekan I FEB UNNES</p>
+        <div class="pakar-tags"><span class="pakar-tag">SPMI</span><span class="pakar-tag">OBE</span><span class="pakar-tag">AMI</span></div>
+      </div>
+      <div class="pakar-mini">
+        <div class="pakar-avatar" style="background:#143875;">JK</div>
+        <h4>Prof. Joko Kariyawan, Ph.D.</h4>
+        <p>Guru Besar UIN Walisongo</p>
+        <div class="pakar-tags"><span class="pakar-tag">ISO 21001</span><span class="pakar-tag">ACQUIN</span></div>
+      </div>
+      <div class="pakar-mini">
+        <div class="pakar-avatar" style="background:var(--gold-500);color:var(--navy-900);">NS</div>
+        <h4>Dr. Nuraini Sifa, M.Pd.</h4>
+        <p>Auditor Lead SPMI Nasional</p>
+        <div class="pakar-tags"><span class="pakar-tag">AMI</span><span class="pakar-tag">Akreditasi</span></div>
+      </div>
+      <div class="pakar-mini">
+        <div class="pakar-avatar" style="background:#0A2558;">RD</div>
+        <h4>Ir. Rahmat Darmawan, M.T.</h4>
+        <p>Lead Auditor ISO 17025</p>
+        <div class="pakar-tags"><span class="pakar-tag">Lab 17025</span><span class="pakar-tag">ISO 9001</span></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:28px;">
+      <a href="redesign-pakar.html" style="color:var(--navy-700);font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;">Lihat semua 12 pakar →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROSES -->
+<section class="process">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">Alur Konsultasi</div>
+      <h2 class="section-title">Mudah & Cepat dalam 4 Langkah</h2>
+    </div>
+    <div class="process-steps">
+      <div class="proc-step">
+        <div class="proc-num">1</div>
+        <h4>Isi Form</h4>
+        <p>Lengkapi form pendaftaran dengan informasi dasar kampus dan topik yang ingin dikonsultasikan.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">2</div>
+        <h4>Konfirmasi Jadwal</h4>
+        <p>Tim kami menghubungi via WhatsApp dalam 24 jam untuk konfirmasi jadwal dan assign pakar yang tepat.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">3</div>
+        <h4>Sesi Konsultasi</h4>
+        <p>Sesi 45 menit via Zoom/Google Meet. Bawa data/dokumen yang relevan untuk diskusi lebih produktif.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">4</div>
+        <h4>Terima Ringkasan</h4>
+        <p>Maks. 2 hari kerja setelah sesi, Anda menerima dokumen ringkasan konsultasi via email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="testi">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">Testimoni</div>
+      <h2 class="section-title">Kata Mereka yang Sudah Konsultasi</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Satu sesi konsultasi gratis ini jauh lebih berharga dari banyak workshop yang pernah saya ikuti. Pakarnya langsung ke inti masalah kami."</p>
+        <div class="testi-author">
+          <div class="testi-av">SH</div>
+          <div>
+            <div class="testi-name">Prof. Siti Handayani</div>
+            <div class="testi-role">Rektor — Universitas XYZ</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Awalnya saya kira ini hanya sales pitch. Ternyata benar-benar konsultasi serius. Roadmap yang diberikan sangat realistis dan langsung bisa kami eksekusi."</p>
+        <div class="testi-author">
+          <div class="testi-av">AP</div>
+          <div>
+            <div class="testi-name">Dr. Ahmad Prayitno</div>
+            <div class="testi-role">Ketua LPM — Politeknik ABC</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Dokumen ringkasan konsultasi yang kami terima langsung kami gunakan untuk presentasi ke Rektor. Hasilnya, anggaran SPMI kami disetujui naik 40%."</p>
+        <div class="testi-author">
+          <div class="testi-av">MW</div>
+          <div>
+            <div class="testi-name">Maya Widiastuti, M.Pd.</div>
+            <div class="testi-role">Kabag Mutu — STIE Maju</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4>Apakah benar-benar gratis tanpa biaya tersembunyi?</h4>
+        <p>100% gratis. Tidak ada biaya tersembunyi atau kewajiban pembelian setelah sesi. Kami membangun kepercayaan melalui kualitas konsultasi, bukan tekanan penjualan.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Siapa yang bisa mengikuti konsultasi ini?</h4>
+        <p>Pimpinan, staf LPM, Ketua Prodi, Dekan, atau siapapun yang memiliki tanggung jawab terkait mutu, akreditasi, atau tata kelola perguruan tinggi.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Berapa peserta yang bisa ikut dalam satu sesi?</h4>
+        <p>Ideal 1-3 orang dari kampus yang sama untuk fokus diskusi. Jika ingin lebih banyak peserta, kami bisa atur sesi khusus yang lebih panjang (berbayar).</p>
+      </div>
+      <div class="faq-item">
+        <h4>Apakah sesi bisa dilakukan offline di kampus kami?</h4>
+        <p>Kunjungan langsung ke kampus tersedia untuk wilayah Jabodetabek, Jawa Tengah, dan DIY. Di luar area tersebut, sesi dilakukan via Zoom. Khusus untuk engagement lebih besar, kami bisa atur kunjungan ke seluruh Indonesia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-simple">
+      <div class="footer-brand">
+        <h4>mutuperguruantinggi.id</h4>
+        <p>Platform mutu perguruan tinggi Indonesia. © 2026 PT Padma Global Nusatama.</p>
+      </div>
+      <div class="footer-links">
+        <a href="redesign-layanan.html">Layanan</a>
+        <a href="redesign-paket.html">Paket</a>
+        <a href="redesign-tentang.html">Tentang</a>
+        <a href="redesign-pakar.html">Pakar</a>
+        <a href="redesign-event-listing.html">Event</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#" style="color:var(--gold-500);">Kebijakan Privasi</a> &nbsp;·&nbsp;
+      <a href="#" style="color:var(--gold-500);">Syarat & Ketentuan</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

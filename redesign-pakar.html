@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="12 Pakar Mutu Perguruan Tinggi bersertifikat KAN — Spesialis SPMI, AMI, OBE, ISO 21001, Akreditasi ACQUIN, dan Tata Kelola PT di Indonesia.">
+<title>Pakar Kami | mutuperguruantinggi.id</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Daftar Pakar mutuperguruantinggi.id",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"item":{"@type":"Person","name":"Dr. Agung Yulianto, M.Si.","jobTitle":"Pakar SPMI & OBE"}},
+    {"@type":"ListItem","position":2,"item":{"@type":"Person","name":"Prof. Joko Kariyawan, Ph.D.","jobTitle":"Pakar ISO 21001 & Akreditasi"}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-900:#061A40;--navy-800:#0A2558;--navy-700:#143875;--navy-600:#1E5BA8;
+  --navy-100:#E8EEF8;--navy-50:#F4F7FC;
+  --gold-500:#FFC72C;--gold-400:#FFD55E;--gold-100:#FFF4D1;
+  --green-500:#2E9D5A;--green-100:#E6F5ED;
+  --white:#FFFFFF;--gray-900:#1A1A1A;--gray-700:#4A4A4A;--gray-500:#888888;
+  --gray-300:#D5D5D5;--gray-100:#F4F4F4;--gray-50:#FAFAFA;
+  --font-display:'Manrope',system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;
+  --shadow-sm:0 1px 2px rgba(10,37,88,.06),0 2px 4px rgba(10,37,88,.04);
+  --shadow-md:0 4px 6px rgba(10,37,88,.07),0 10px 20px rgba(10,37,88,.05);
+  --shadow-lg:0 10px 25px rgba(10,37,88,.12),0 20px 40px rgba(10,37,88,.08);
+  --max-w:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.2;color:var(--navy-800);letter-spacing:-.02em;}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+
+nav{background:var(--white);border-bottom:1px solid var(--navy-100);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max-w);margin:0 auto;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nav-logo img{height:38px;}
+.nav-logo span{font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--navy-800);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--gray-700);}
+.nav-links a.active,.nav-links a:hover{color:var(--navy-800);}
+.nav-cta{background:var(--gold-500);color:var(--navy-900);padding:10px 20px;border-radius:var(--radius-sm);font-size:.9rem;font-weight:700;}
+
+.breadcrumb{background:var(--navy-50);border-bottom:1px solid var(--navy-100);padding:12px 0;}
+.breadcrumb-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--gray-500);}
+.breadcrumb-inner a{color:var(--navy-700);font-weight:600;}
+
+/* HERO */
+.hero-pakar{background:linear-gradient(135deg,var(--navy-900) 0%,var(--navy-700) 100%);padding:64px 0;text-align:center;}
+.hero-pakar h1{font-size:clamp(2rem,4vw,2.8rem);color:var(--white);margin-bottom:16px;}
+.hero-pakar h1 em{font-style:normal;color:var(--gold-500);}
+.hero-pakar p{color:rgba(255,255,255,.75);font-size:1rem;max-width:600px;margin:0 auto 32px;line-height:1.75;}
+.stat-row{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;}
+.stat-item{text-align:center;}
+.stat-num{font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--gold-500);}
+.stat-label{font-size:.82rem;color:rgba(255,255,255,.65);margin-top:2px;}
+
+/* FILTER */
+.filter-bar{background:var(--white);border-bottom:1px solid var(--navy-100);padding:16px 0;position:sticky;top:73px;z-index:50;}
+.filter-inner{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.filter-label{font-size:.82rem;font-weight:700;color:var(--gray-500);}
+.filter-chips{display:flex;gap:8px;flex-wrap:wrap;}
+.chip{padding:8px 16px;border-radius:100px;font-size:.82rem;font-weight:600;cursor:pointer;border:1.5px solid var(--navy-100);color:var(--gray-700);background:var(--white);transition:.2s;}
+.chip.active,.chip:hover{background:var(--navy-800);color:var(--white);border-color:var(--navy-800);}
+.filter-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:100px;padding:8px 16px;}
+.filter-search input{border:none;background:transparent;font-size:.85rem;font-family:var(--font-body);color:var(--gray-900);width:180px;}
+.filter-search input:focus{outline:none;}
+
+/* PAKAR GRID */
+.pakar-section{padding:60px 0 80px;}
+.pakar-count{font-size:.875rem;color:var(--gray-500);margin-bottom:32px;}
+.pakar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.pakar-card{background:var(--white);border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--navy-100);box-shadow:var(--shadow-sm);transition:.25s;}
+.pakar-card:hover{box-shadow:var(--shadow-lg);border-color:var(--navy-200);transform:translateY(-4px);}
+.pakar-card-top{background:linear-gradient(135deg,var(--navy-800),var(--navy-700));padding:28px 24px;text-align:center;position:relative;}
+.pakar-avatar-lg{width:88px;height:88px;border-radius:50%;background:var(--navy-600);border:4px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.6rem;font-weight:800;color:var(--white);margin:0 auto 14px;}
+.pakar-avatar-lg.gold{background:var(--gold-500);color:var(--navy-900);}
+.pakar-card-top h3{font-family:var(--font-display);font-size:1rem;color:var(--white);margin-bottom:4px;}
+.pakar-role-badge{display:inline-block;background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);padding:4px 12px;border-radius:100px;font-size:.75rem;font-weight:600;margin-bottom:8px;}
+.pakar-affiliation{font-size:.78rem;color:rgba(255,255,255,.6);}
+.pakar-card-body{padding:20px 24px;}
+.pakar-bio{font-size:.85rem;color:var(--gray-700);line-height:1.65;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.pakar-specializations{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+.spec-tag{background:var(--navy-50);color:var(--navy-700);padding:4px 10px;border-radius:100px;font-size:.72rem;font-weight:700;}
+.pakar-stats{display:flex;gap:16px;padding-top:14px;border-top:1px solid var(--gray-100);}
+.p-stat{text-align:center;}
+.p-stat strong{display:block;font-family:var(--font-display);font-size:1rem;font-weight:800;color:var(--navy-800);}
+.p-stat small{font-size:.7rem;color:var(--gray-500);}
+.pakar-card-footer{padding:0 24px 20px;}
+.btn-profile{display:block;text-align:center;background:var(--navy-50);color:var(--navy-800);padding:10px;border-radius:var(--radius-sm);font-weight:600;font-size:.875rem;border:1.5px solid var(--navy-100);transition:.2s;}
+.btn-profile:hover{background:var(--navy-800);color:var(--white);}
+
+/* CALL FOR EXPERTS CTA */
+.cfe-section{background:var(--gold-100);border-top:1px solid var(--gold-200);border-bottom:1px solid var(--gold-200);padding:48px 0;}
+.cfe-inner{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;}
+.cfe-text h3{font-size:1.3rem;color:var(--navy-800);margin-bottom:8px;}
+.cfe-text p{font-size:.9rem;color:var(--gray-700);max-width:560px;line-height:1.65;}
+.btn-cfe{background:var(--navy-800);color:var(--white);padding:13px 28px;border-radius:var(--radius-sm);font-weight:700;font-size:.9rem;white-space:nowrap;font-family:var(--font-display);}
+.btn-cfe:hover{background:var(--navy-700);}
+
+/* PAKAR DETAIL MODAL PREVIEW (static) */
+.pakar-featured{background:var(--navy-50);padding:64px 0;}
+.featured-grid{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start;}
+.featured-photo{background:linear-gradient(135deg,var(--navy-800),var(--navy-700));border-radius:var(--radius-xl);padding:40px 28px;text-align:center;}
+.featured-avatar{width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.15);border:4px solid var(--gold-500);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--white);margin:0 auto 20px;}
+.featured-name{font-family:var(--font-display);color:var(--white);font-size:1.15rem;margin-bottom:6px;}
+.featured-title{font-size:.85rem;color:rgba(255,255,255,.65);margin-bottom:16px;}
+.featured-certs{display:flex;flex-direction:column;gap:8px;}
+.cert-item{background:rgba(255,255,255,.08);border-radius:var(--radius-sm);padding:8px 12px;font-size:.78rem;color:rgba(255,255,255,.8);text-align:left;}
+.cert-item strong{color:var(--gold-500);display:block;font-size:.72rem;margin-bottom:2px;}
+.featured-content h2{font-size:1.4rem;color:var(--navy-800);margin-bottom:8px;}
+.featured-content .sub{font-size:.9rem;color:var(--navy-600);font-weight:600;margin-bottom:16px;}
+.featured-bio{font-size:.92rem;color:var(--gray-700);line-height:1.75;margin-bottom:20px;}
+.featured-specs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.featured-spec{background:var(--navy-800);color:var(--gold-500);padding:6px 14px;border-radius:100px;font-size:.78rem;font-weight:700;}
+.featured-events h4{font-size:.95rem;color:var(--navy-800);margin-bottom:10px;}
+.event-mini-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.event-mini{display:flex;align-items:center;gap:12px;background:var(--white);border-radius:var(--radius-sm);padding:10px 14px;font-size:.82rem;}
+.event-mini-date{background:var(--navy-800);color:var(--white);padding:4px 10px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.event-mini a{color:var(--navy-700);font-weight:600;}
+.featured-cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;}
+.btn-consult{background:var(--gold-500);color:var(--navy-900);padding:12px 24px;border-radius:var(--radius-sm);font-weight:700;font-size:.9rem;font-family:var(--font-display);}
+.btn-linkedin{border:2px solid var(--navy-200);color:var(--navy-800);padding:10px 20px;border-radius:var(--radius-sm);font-weight:600;font-size:.875rem;}
+
+.section-label{font-size:.8rem;font-weight:700;color:var(--navy-600);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px;}
+.section-title{font-size:clamp(1.6rem,3vw,2.2rem);color:var(--navy-800);margin-bottom:16px;}
+
+footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:40px 0 20px;}
+.footer-simple{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:24px;}
+.footer-brand h4{font-family:var(--font-display);color:var(--white);font-size:1.05rem;margin-bottom:4px;}
+.footer-brand p{font-size:.82rem;}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap;}
+.footer-links a{font-size:.85rem;}
+.footer-links a:hover{color:var(--gold-500);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:.8rem;text-align:center;}
+
+@media(max-width:960px){
+  .pakar-grid{grid-template-columns:1fr 1fr;}
+  .featured-grid{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .pakar-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="LOGO-MUTU-PERGURUAN-TINGGI-17032025.png" alt="Logo" onerror="this.style.display='none'">
+      <span>mutuperguruantinggi.id</span>
+    </div>
+    <div class="nav-links">
+      <a href="redesign-mutuperguruantinggi.html">Beranda</a>
+      <a href="redesign-tentang.html">Tentang</a>
+      <a href="redesign-layanan.html">Layanan</a>
+      <a href="redesign-pakar.html" class="active">Pakar</a>
+      <a href="redesign-konsultasi-gratis.html" class="nav-cta">Konsultasi Gratis</a>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="redesign-mutuperguruantinggi.html">Beranda</a> <span>›</span>
+    <span>Pakar Kami</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero-pakar">
+  <div class="container">
+    <h1><em>12 Pakar</em> Terpercaya<br>di Bidangnya</h1>
+    <p>Bukan sekadar trainer — mereka adalah praktisi aktif yang mengajar, meneliti, dan mengimplementasikan sistem mutu di perguruan tinggi terkemuka Indonesia.</p>
+    <div class="stat-row">
+      <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">Pakar Aktif</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Bersertifikat KAN</div></div>
+      <div class="stat-item"><div class="stat-num">15K+</div><div class="stat-label">Alumni Dibimbing</div></div>
+      <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Event Dibawakan</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER -->
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-inner">
+      <span class="filter-label">Filter:</span>
+      <div class="filter-chips">
+        <div class="chip active">Semua</div>
+        <div class="chip">SPMI</div>
+        <div class="chip">AMI</div>
+        <div class="chip">OBE</div>
+        <div class="chip">ISO 21001</div>
+        <div class="chip">Akreditasi</div>
+        <div class="chip">Laboratorium</div>
+        <div class="chip">Tata Kelola</div>
+      </div>
+      <div class="filter-search">
+        <span style="color:var(--gray-400);font-size:1rem;">🔍</span>
+        <input type="text" placeholder="Cari pakar...">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAKAR GRID -->
+<section class="pakar-section">
+  <div class="container">
+    <div class="pakar-count">Menampilkan <strong>12 pakar</strong></div>
+    <div class="pakar-grid">
+
+      <!-- Pakar 1 -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg gold">AY</div>
+          <h3>Dr. Agung Yulianto, M.Si.</h3>
+          <div class="pakar-role-badge">Lead Trainer SPMI & OBE</div>
+          <div class="pakar-affiliation">Wakil Dekan I FEB · Universitas Negeri Semarang</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Lebih dari 15 tahun pengalaman di bidang penjaminan mutu perguruan tinggi. Pionir implementasi SPMI berbasis risiko di Indonesia. Penulis 3 buku referensi SPMI nasional.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">SPMI</span>
+            <span class="spec-tag">OBE</span>
+            <span class="spec-tag">AMI</span>
+            <span class="spec-tag">ISO 21001</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>200+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>5.000+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>15 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <!-- Pakar 2 -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg">JK</div>
+          <h3>Prof. Joko Kariyawan, Ph.D.</h3>
+          <div class="pakar-role-badge">Pakar ISO 21001 & ACQUIN</div>
+          <div class="pakar-affiliation">Guru Besar · UIN Walisongo Semarang</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Profesor pertama di Indonesia yang tersertifikasi ACQUIN (Jerman) dan ISO 21001. Telah mendampingi 40+ kampus meraih akreditasi internasional ACQUIN.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">ISO 21001</span>
+            <span class="spec-tag">ACQUIN</span>
+            <span class="spec-tag">Akreditasi Int'l</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>150+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>3.200+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>18 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <!-- Pakar 3 -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:#2E9D5A;">NS</div>
+          <h3>Dr. Nuraini Sifa, M.Pd.</h3>
+          <div class="pakar-role-badge">Lead Auditor SPMI Nasional</div>
+          <div class="pakar-affiliation">Direktur LPM · Universitas Islam Bandung</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Lead Auditor AMI bersertifikat KAN dengan pengalaman mengaudit 200+ program studi di seluruh Indonesia. Spesialis penyelarasan SPMI dengan BAN-PT versi 4.0.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">AMI</span>
+            <span class="spec-tag">Akreditasi</span>
+            <span class="spec-tag">SPMI</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>180+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>4.000+</small></div>
+            <div class="p-stat"><strong>12 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <!-- Pakar 4 -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:#1E5BA8;">RD</div>
+          <h3>Ir. Rahmat Darmawan, M.T.</h3>
+          <div class="pakar-role-badge">Lead Auditor ISO 17025 & 9001</div>
+          <div class="pakar-affiliation">Kepala Lab Metrologi · UNSIL Tasikmalaya</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Auditor laboratorium terakreditasi KAN dengan spesialisasi ISO/IEC 17025. Mendampingi 50+ laboratorium kampus mendapatkan akreditasi KAN untuk pertama kalinya.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">Lab 17025</span>
+            <span class="spec-tag">ISO 9001</span>
+            <span class="spec-tag">Metrologi</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>120+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>2.800+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>13 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <!-- Pakar 5 -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:#7B1FA2;">SW</div>
+          <h3>Prof. Sri Wahyuni, Ph.D.</h3>
+          <div class="pakar-role-badge">Pakar OBE & Kurikulum Merdeka</div>
+          <div class="pakar-affiliation">Guru Besar Pendidikan · UNY Yogyakarta</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Pakar terkemuka Outcome-Based Education Indonesia. Konsultan Kurikulum Merdeka Belajar Kemdikbud 2021-2024. Telah mendampingi 300+ prodi merancang kurikulum berbasis OBE.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">OBE</span>
+            <span class="spec-tag">Kurikulum</span>
+            <span class="spec-tag">Merdeka Belajar</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>250+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>6.000+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>20 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <!-- Pakar 6 -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:#E65100;">BH</div>
+          <h3>Dr. Budi Hartono, M.M.</h3>
+          <div class="pakar-role-badge">Pakar Tata Kelola & GUG</div>
+          <div class="pakar-affiliation">Sekretaris Senat · Universitas Negeri Jakarta</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Spesialis Good University Governance (GUG) dan tata kelola PT. Asesor BAN-PT aktif sejak 2015. Penulis buku "Tata Kelola Perguruan Tinggi Berbasis Nilai" (2022).</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">Tata Kelola</span>
+            <span class="spec-tag">GUG</span>
+            <span class="spec-tag">BAN-PT</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>160+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>3.500+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>11 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <!-- Pakar 7-9: placeholder compact -->
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:#455A64;">DM</div>
+          <h3>Dr. Deni Mulyadi, M.Pd.</h3>
+          <div class="pakar-role-badge">Pakar Akreditasi Nasional</div>
+          <div class="pakar-affiliation">Asesor BAN-PT · UNPAD Bandung</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Asesor BAN-PT dengan 500+ visitasi akreditasi. Konsultan penyusunan LED dan LKPT untuk universitas negeri dan swasta di seluruh Indonesia.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">Akreditasi</span>
+            <span class="spec-tag">LED</span>
+            <span class="spec-tag">BAN-PT</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>140+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>3.000+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>10 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:#00838F;">RF</div>
+          <h3>Dr. Reza Fauzi, M.T.</h3>
+          <div class="pakar-role-badge">Pakar Lab & ISO 9001</div>
+          <div class="pakar-affiliation">Kepala Divisi QA · PT Semen Indonesia</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Praktisi ISO 9001 dan manajemen mutu industri yang beralih ke sektor pendidikan. Membawa pendekatan industri dalam membangun sistem mutu kampus yang efisien.</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">ISO 9001</span>
+            <span class="spec-tag">Lab 17025</span>
+            <span class="spec-tag">QMS</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>100+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>2.200+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>14 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+      <div class="pakar-card">
+        <div class="pakar-card-top">
+          <div class="pakar-avatar-lg" style="background:var(--gold-500);color:var(--navy-900);">LN</div>
+          <h3>Dr. Laksmi Nurindah, M.Pd.</h3>
+          <div class="pakar-role-badge">Pakar SPMI & Sertifikasi Dosen</div>
+          <div class="pakar-affiliation">Koordinator BAN-PT Region III · UNSOED</div>
+        </div>
+        <div class="pakar-card-body">
+          <p class="pakar-bio">Koordinator regional BAN-PT Jawa Tengah dan DIY. Pakar sertifikasi dosen dan tendik. Telah mendampingi 80+ prodi meraih akreditasi "Unggul".</p>
+          <div class="pakar-specializations">
+            <span class="spec-tag">SPMI</span>
+            <span class="spec-tag">Sertif. Dosen</span>
+            <span class="spec-tag">Akreditasi</span>
+          </div>
+          <div class="pakar-stats">
+            <div class="p-stat"><strong>190+</strong><small>Event</small></div>
+            <div class="p-stat"><strong>4.200+</strong><small>Alumni</small></div>
+            <div class="p-stat"><strong>16 Thn</strong><small>Pengalaman</small></div>
+          </div>
+        </div>
+        <div class="pakar-card-footer">
+          <a href="redesign-pakar-detail.html" class="btn-profile">Lihat Profil Lengkap →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <p style="color:var(--gray-500);font-size:.875rem;margin-bottom:16px;">Menampilkan 9 dari 12 pakar</p>
+      <button style="background:var(--navy-50);border:2px solid var(--navy-200);color:var(--navy-800);padding:12px 28px;border-radius:var(--radius-sm);font-weight:700;font-size:.9rem;cursor:pointer;font-family:var(--font-display);">Tampilkan 3 Pakar Lainnya ↓</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PAKAR (Profil Preview) -->
+<section class="pakar-featured">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto 40px;">
+      <div class="section-label">Profil Unggulan</div>
+      <h2 class="section-title">Spotlight: Dr. Agung Yulianto</h2>
+    </div>
+    <div class="featured-grid">
+      <div class="featured-photo">
+        <div class="featured-avatar">AY</div>
+        <div class="featured-name">Dr. Agung Yulianto, M.Si.</div>
+        <div class="featured-title">CQAI · CQAA · Lead Assessor ISO 21001</div>
+        <div class="featured-certs">
+          <div class="cert-item"><strong>Sertifikasi</strong>Lead Implementer SPMI (KAN)</div>
+          <div class="cert-item"><strong>Sertifikasi</strong>ISO 21001 Lead Implementer</div>
+          <div class="cert-item"><strong>Sertifikasi</strong>Asesor BAN-PT Aktif</div>
+          <div class="cert-item"><strong>Sertifikasi</strong>TOT OBE (DIKTI 2022)</div>
+        </div>
+      </div>
+      <div class="featured-content">
+        <h2>Wakil Dekan I FEB — Universitas Negeri Semarang</h2>
+        <div class="sub">Pakar SPMI · AMI · OBE · ISO 21001 · Tata Kelola PT</div>
+        <p class="featured-bio">Dr. Agung Yulianto, M.Si. adalah salah satu pakar penjaminan mutu perguruan tinggi paling berpengalaman di Indonesia. Dengan lebih dari 15 tahun pengalaman, beliau telah mendampingi ratusan perguruan tinggi dari Aceh hingga Papua dalam membangun sistem mutu yang solid, terstandarisasi, dan berbasis risiko.</p>
+        <p class="featured-bio">Sebagai Wakil Dekan I FEB UNNES, beliau menggabungkan perspektif akademisi dan praktisi dalam setiap sesi pelatihan. Penulis 3 buku referensi SPMI yang digunakan oleh 200+ perguruan tinggi sebagai panduan implementasi.</p>
+        <div class="featured-specs">
+          <span class="featured-spec">SPMI</span>
+          <span class="featured-spec">AMI</span>
+          <span class="featured-spec">OBE</span>
+          <span class="featured-spec">ISO 21001</span>
+          <span class="featured-spec">Tata Kelola PT</span>
+        </div>
+        <div class="featured-events">
+          <h4>Event Terdekat yang Dibawakan:</h4>
+          <ul class="event-mini-list">
+            <li class="event-mini">
+              <span class="event-mini-date">10 Jun</span>
+              <a href="redesign-event-detail.html">Bootcamp Lead Implementer SPMI ISO 21001 — Semarang</a>
+            </li>
+            <li class="event-mini">
+              <span class="event-mini-date">24 Jun</span>
+              <a href="redesign-event-detail.html">Webinar Nasional: Implementasi Permendiktisaintek 39/2025</a>
+            </li>
+          </ul>
+        </div>
+        <div class="featured-cta">
+          <a href="redesign-konsultasi-gratis.html" class="btn-consult">Konsultasi dengan Dr. Agung</a>
+          <a href="redesign-pakar-detail.html" class="btn-linkedin">Lihat Profil Lengkap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL FOR EXPERTS -->
+<div class="cfe-section">
+  <div class="container">
+    <div class="cfe-inner">
+      <div class="cfe-text">
+        <h3>🎓 Anda Pakar di Bidang Mutu Perguruan Tinggi?</h3>
+        <p>Bergabunglah dengan jaringan 12 pakar kami. Kami membuka kesempatan bagi akademisi dan praktisi berpengalaman untuk berkontribusi dalam peningkatan mutu perguruan tinggi Indonesia.</p>
+      </div>
+      <a href="#" class="btn-cfe">Daftar sebagai Pakar Mitra →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-simple">
+      <div class="footer-brand">
+        <h4>mutuperguruantinggi.id</h4>
+        <p>Platform mutu perguruan tinggi Indonesia. © 2026 PT Padma Global Nusatama.</p>
+      </div>
+      <div class="footer-links">
+        <a href="redesign-layanan.html">Layanan</a>
+        <a href="redesign-paket.html">Paket</a>
+        <a href="redesign-tentang.html">Tentang</a>
+        <a href="redesign-event-listing.html">Event</a>
+        <a href="redesign-studi-kasus.html">Studi Kasus</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a href="#" style="color:var(--gold-500);">Kebijakan Privasi</a> &nbsp;·&nbsp;
+      <a href="#" style="color:var(--gold-500);">Syarat & Ketentuan</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

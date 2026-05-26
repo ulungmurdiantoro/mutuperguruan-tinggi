@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"c:\\\\Users\\\\umurd\\\\Downloads\\\\mutuperguruan-tinggi\" /b)",
+      "Bash(for f in \"redesign-mutuperguruantinggi.html\" \"redesign-layanan.html\" \"redesign-sertifikasi-detail.html\" \"redesign-event-listing.html\" \"redesign-event-detail.html\" \"redesign-artikel.html\"; do *)",
+      "Read(//c/Users/umurd/Downloads/**)",
+      "Bash(for f in \"redesign-tentang.html\" \"redesign-ami-digital.html\" \"redesign-paket.html\" \"redesign-konsultasi-gratis.html\" \"redesign-pakar.html\" \"redesign-studi-kasus.html\" \"redesign-tools-cek-mutu.html\"; do *)"
+    ]
+  }
+}

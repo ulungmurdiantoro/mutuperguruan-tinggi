@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Paket Reguler & Premium mutuperguruantinggi.id — Pilih paket pelatihan dan pendampingan mutu perguruan tinggi terbaik sesuai kebutuhan dan anggaran kampus Anda.">
+<title>Paket Reguler & Premium | mutuperguruantinggi.id</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Paket Layanan mutuperguruantinggi.id",
+  "description": "Pilihan paket pelatihan dan sertifikasi mutu perguruan tinggi",
+  "itemListElement": [
+    {"@type": "ListItem","position": 1,"name": "Paket Reguler","url": "https://mutuperguruantinggi.id/paket/reguler"},
+    {"@type": "ListItem","position": 2,"name": "Paket Premium","url": "https://mutuperguruantinggi.id/paket/premium"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-900:#061A40;--navy-800:#0A2558;--navy-700:#143875;--navy-600:#1E5BA8;
+  --navy-100:#E8EEF8;--navy-50:#F4F7FC;
+  --gold-500:#FFC72C;--gold-400:#FFD55E;--gold-100:#FFF4D1;--gold-200:#FFE48A;
+  --green-500:#2E9D5A;--green-100:#E6F5ED;
+  --white:#FFFFFF;--gray-900:#1A1A1A;--gray-700:#4A4A4A;--gray-500:#888888;
+  --gray-300:#D5D5D5;--gray-100:#F4F4F4;--gray-50:#FAFAFA;
+  --font-display:'Manrope',system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius-sm:6px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;
+  --shadow-sm:0 1px 2px rgba(10,37,88,.06),0 2px 4px rgba(10,37,88,.04);
+  --shadow-md:0 4px 6px rgba(10,37,88,.07),0 10px 20px rgba(10,37,88,.05);
+  --shadow-lg:0 10px 25px rgba(10,37,88,.12),0 20px 40px rgba(10,37,88,.08);
+  --max-w:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.2;color:var(--navy-800);letter-spacing:-.02em;}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+section{padding:72px 0;}
+
+nav{background:var(--white);border-bottom:1px solid var(--navy-100);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max-w);margin:0 auto;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nav-logo img{height:38px;}
+.nav-logo span{font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--navy-800);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--gray-700);}
+.nav-links a.active,.nav-links a:hover{color:var(--navy-800);}
+.nav-cta{background:var(--gold-500);color:var(--navy-900);padding:10px 20px;border-radius:var(--radius-sm);font-size:.9rem;font-weight:700;}
+
+.breadcrumb{background:var(--navy-50);border-bottom:1px solid var(--navy-100);padding:12px 0;}
+.breadcrumb-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--gray-500);}
+.breadcrumb-inner a{color:var(--navy-700);font-weight:600;}
+
+/* HERO */
+.hero-paket{background:linear-gradient(135deg,var(--navy-900) 0%,var(--navy-800) 100%);padding:64px 0;text-align:center;}
+.hero-paket h1{font-size:clamp(2rem,4vw,2.8rem);color:var(--white);margin-bottom:16px;}
+.hero-paket h1 em{font-style:normal;color:var(--gold-500);}
+.hero-paket p{color:rgba(255,255,255,.75);font-size:1.05rem;max-width:600px;margin:0 auto 32px;}
+.toggle-billing{display:inline-flex;background:rgba(255,255,255,.1);border-radius:100px;padding:4px;gap:4px;}
+.toggle-billing button{padding:8px 20px;border-radius:100px;border:none;cursor:pointer;font-family:var(--font-display);font-size:.875rem;font-weight:600;transition:.2s;}
+.toggle-billing button.active{background:var(--white);color:var(--navy-800);}
+.toggle-billing button:not(.active){background:transparent;color:rgba(255,255,255,.7);}
+.save-badge{display:inline-block;background:var(--green-500);color:var(--white);padding:3px 10px;border-radius:100px;font-size:.72rem;font-weight:700;margin-left:6px;}
+
+/* PRICING CARDS */
+.pricing-section{background:var(--navy-50);padding:72px 0;}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:900px;margin:0 auto;}
+.price-card{background:var(--white);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-md);border:2px solid transparent;position:relative;transition:.25s;}
+.price-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.price-card.premium{border-color:var(--gold-500);}
+.card-header{padding:32px;border-bottom:1px solid var(--gray-100);}
+.card-header.regular-header{background:var(--navy-50);}
+.card-header.premium-header{background:linear-gradient(135deg,var(--navy-800),var(--navy-700));}
+.plan-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:.78rem;font-weight:700;margin-bottom:16px;}
+.plan-badge.reg{background:var(--navy-100);color:var(--navy-700);}
+.plan-badge.prem{background:var(--gold-500);color:var(--navy-900);}
+.plan-name{font-size:1.6rem;margin-bottom:6px;}
+.plan-name.light{color:var(--navy-800);}
+.plan-name.dark{color:var(--white);}
+.plan-tagline{font-size:.875rem;margin-bottom:20px;}
+.plan-tagline.light{color:var(--gray-500);}
+.plan-tagline.dark{color:rgba(255,255,255,.65);}
+.plan-price{margin-bottom:8px;}
+.price-amount{font-family:var(--font-display);font-size:2.5rem;font-weight:800;}
+.price-amount.light{color:var(--navy-800);}
+.price-amount.dark{color:var(--gold-500);}
+.price-unit-text{font-size:.9rem;}
+.price-unit-text.light{color:var(--gray-500);}
+.price-unit-text.dark{color:rgba(255,255,255,.6);}
+.price-note{font-size:.8rem;margin-top:4px;}
+.price-note.light{color:var(--gray-500);}
+.price-note.dark{color:rgba(255,255,255,.5);}
+.popular-ribbon{position:absolute;top:20px;right:-30px;background:var(--gold-500);color:var(--navy-900);font-size:.72rem;font-weight:700;padding:6px 40px;transform:rotate(45deg);}
+
+.card-body{padding:32px;}
+.features-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:28px;}
+.feature-item{display:flex;align-items:flex-start;gap:12px;font-size:.9rem;}
+.feat-check{width:22px;height:22px;background:var(--green-100);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green-500);font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:1px;}
+.feat-check.no{background:var(--gray-100);color:var(--gray-400);}
+.feat-text{color:var(--gray-700);line-height:1.5;}
+.feat-text.no{color:var(--gray-400);}
+.feat-badge{display:inline-block;background:var(--gold-100);color:#9A6800;padding:2px 7px;border-radius:4px;font-size:.7rem;font-weight:700;margin-left:4px;}
+
+.btn-regular{width:100%;background:var(--navy-800);color:var(--white);padding:15px 24px;border-radius:var(--radius-md);font-family:var(--font-display);font-weight:700;font-size:1rem;text-align:center;display:block;transition:.2s;}
+.btn-regular:hover{background:var(--navy-700);}
+.btn-premium{width:100%;background:var(--gold-500);color:var(--navy-900);padding:15px 24px;border-radius:var(--radius-md);font-family:var(--font-display);font-weight:700;font-size:1rem;text-align:center;display:block;transition:.2s;}
+.btn-premium:hover{background:var(--gold-400);}
+.btn-note{text-align:center;font-size:.8rem;color:var(--gray-500);margin-top:10px;}
+
+/* COMPARISON TABLE */
+.comparison{background:var(--white);}
+.section-label{font-size:.8rem;font-weight:700;color:var(--navy-600);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px;}
+.section-title{font-size:clamp(1.6rem,3vw,2.2rem);color:var(--navy-800);margin-bottom:16px;}
+.comp-table{width:100%;border-collapse:collapse;margin-top:40px;font-size:.9rem;}
+.comp-table th{padding:14px 20px;text-align:left;font-family:var(--font-display);font-size:.85rem;}
+.comp-table th:first-child{color:var(--gray-700);}
+.comp-table th.reg-col{background:var(--navy-50);color:var(--navy-800);text-align:center;}
+.comp-table th.prem-col{background:var(--navy-800);color:var(--gold-500);text-align:center;}
+.comp-table th.prem-col small{display:block;font-size:.72rem;color:rgba(255,255,255,.6);font-weight:400;}
+.comp-table td{padding:13px 20px;border-bottom:1px solid var(--gray-100);}
+.comp-table td:not(:first-child){text-align:center;}
+.comp-table tr:last-child td{border-bottom:0;}
+.comp-table tr:hover td{background:var(--gray-50);}
+.comp-table tr.section-divider td{background:var(--navy-50);font-family:var(--font-display);font-weight:700;color:var(--navy-700);font-size:.82rem;padding:8px 20px;}
+.check-yes{color:var(--green-500);font-size:1.1rem;}
+.check-no{color:var(--gray-300);font-size:1.1rem;}
+.tag-added{background:var(--gold-100);color:#9A6800;padding:2px 8px;border-radius:4px;font-size:.72rem;font-weight:700;}
+.tag-unlim{background:var(--green-100);color:var(--green-500);padding:2px 8px;border-radius:4px;font-size:.72rem;font-weight:700;}
+
+/* FAQ -->
+.faq-paket{background:var(--navy-50);}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px;}
+.faq-item{background:var(--white);border-radius:var(--radius-md);padding:22px;border:1px solid var(--navy-100);}
+.faq-item h4{font-size:.95rem;color:var(--navy-800);margin-bottom:8px;}
+.faq-item p{font-size:.85rem;color:var(--gray-700);line-height:1.65;}
+
+/* ENTERPRISE */
+.enterprise{background:linear-gradient(135deg,var(--navy-800),var(--navy-700));padding:56px 0;}
+.ent-inner{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;}
+.ent-text h2{font-size:1.7rem;color:var(--white);margin-bottom:12px;}
+.ent-text p{color:rgba(255,255,255,.75);font-size:.95rem;max-width:600px;line-height:1.7;}
+.ent-features{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap;}
+.ent-feat{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.85);font-size:.85rem;}
+.ent-feat::before{content:'✓';color:var(--gold-500);font-weight:700;}
+.ent-cta{display:flex;flex-direction:column;gap:12px;flex-shrink:0;}
+.btn-gold-lg{background:var(--gold-500);color:var(--navy-900);padding:15px 32px;border-radius:var(--radius-md);font-family:var(--font-display);font-weight:700;font-size:1rem;text-align:center;white-space:nowrap;}
+.btn-gold-lg:hover{background:var(--gold-400);}
+.btn-wh-outline{border:2px solid rgba(255,255,255,.4);color:var(--white);padding:13px 32px;border-radius:var(--radius-md);font-family:var(--font-display);font-weight:700;font-size:1rem;text-align:center;white-space:nowrap;}
+
+/* TRUST */
+.trust-strip{background:var(--gray-50);border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100);padding:32px 0;}
+.trust-inner{display:flex;justify-content:center;align-items:center;gap:48px;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:10px;color:var(--gray-700);font-size:.875rem;font-weight:500;}
+.trust-icon{font-size:1.3rem;}
+
+footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:48px 0 24px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.footer-brand h4{font-family:var(--font-display);font-size:1.1rem;color:var(--white);margin-bottom:12px;}
+.footer-brand p{font-size:.85rem;line-height:1.7;}
+.footer-col h5{font-family:var(--font-display);font-size:.9rem;color:var(--white);margin-bottom:14px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.footer-col li a{font-size:.85rem;}
+.footer-col li a:hover{color:var(--gold-500);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.8rem;}
+
+@media(max-width:900px){
+  .pricing-grid,.comp-table,.faq-grid{grid-template-columns:1fr;}
+  .ent-inner{grid-template-columns:1fr;}
+  .comp-table{font-size:.82rem;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="LOGO-MUTU-PERGURUAN-TINGGI-17032025.png" alt="Logo" onerror="this.style.display='none'">
+      <span>mutuperguruantinggi.id</span>
+    </div>
+    <div class="nav-links">
+      <a href="redesign-mutuperguruantinggi.html">Beranda</a>
+      <a href="redesign-layanan.html">Layanan</a>
+      <a href="redesign-paket.html" class="active">Paket</a>
+      <a href="redesign-event-listing.html">Event</a>
+      <a href="redesign-konsultasi-gratis.html" class="nav-cta">Konsultasi Gratis</a>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="redesign-mutuperguruantinggi.html">Beranda</a> <span>›</span>
+    <span>Paket Layanan</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero-paket">
+  <div class="container">
+    <h1>Pilih Paket yang <em>Tepat</em><br>untuk Kampus Anda</h1>
+    <p>Dari pelatihan dasar hingga pendampingan komprehensif — kami memiliki paket yang sesuai dengan kebutuhan dan anggaran setiap perguruan tinggi.</p>
+    <div class="toggle-billing">
+      <button class="active">Per Peserta</button>
+      <button>Paket Institusi <span class="save-badge">Hemat 30%</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-icon">🔒</span> Pembayaran aman & terjamin</div>
+      <div class="trust-item"><span class="trust-icon">📜</span> Sertifikat resmi KAN</div>
+      <div class="trust-item"><span class="trust-icon">🔄</span> Bisa reschedule 1x gratis</div>
+      <div class="trust-item"><span class="trust-icon">💬</span> Dukungan WhatsApp 24/7</div>
+      <div class="trust-item"><span class="trust-icon">📚</span> Materi digital seumur hidup</div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING CARDS -->
+<section class="pricing-section">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto 48px;">
+      <div class="section-label">Pilihan Paket</div>
+      <h2 class="section-title">Reguler vs. Premium</h2>
+      <p style="color:var(--gray-700);">Kedua paket memberikan sertifikat resmi terakreditasi KAN. Perbedaan utama ada pada fasilitas, dukungan, dan manfaat tambahan.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- REGULER -->
+      <div class="price-card">
+        <div class="card-header regular-header">
+          <div class="plan-badge reg">📘 Standar</div>
+          <div class="plan-name light">Paket Reguler</div>
+          <div class="plan-tagline light">Pilihan cerdas untuk anggaran terbatas</div>
+          <div class="plan-price">
+            <span class="price-amount light">Rp 3.750.000</span>
+            <span class="price-unit-text light"> / peserta</span>
+          </div>
+          <div class="price-note light">Sudah termasuk: materi, sertifikat, konsumsi</div>
+        </div>
+        <div class="card-body">
+          <ul class="features-list">
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Pelatihan 40 JP (5 hari)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Uji Kompetensi KAN (tertulis + wawancara)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Sertifikat Kompetensi (BNSP/KAN) + gelar non-akademik</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Modul pelatihan digital (PDF)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Template dokumen (10 template)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Akses forum alumni WhatsApp</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check no">—</div>
+              <span class="feat-text no">Pendampingan implementasi (3 sesi)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check no">—</div>
+              <span class="feat-text no">Konsultasi on-call (6 bulan)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check no">—</div>
+              <span class="feat-text no">Akses AMI Digital (1 semester)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check no">—</div>
+              <span class="feat-text no">Report mutu prodi</span>
+            </li>
+          </ul>
+          <a href="redesign-konsultasi-gratis.html" class="btn-regular">Daftar Paket Reguler</a>
+          <div class="btn-note">atau <a href="https://wa.me/6281286563234" style="color:var(--navy-700);font-weight:600;">hubungi via WhatsApp</a></div>
+        </div>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="price-card premium">
+        <div class="popular-ribbon">TERPOPULER</div>
+        <div class="card-header premium-header">
+          <div class="plan-badge prem">⭐ Direkomendasikan</div>
+          <div class="plan-name dark">Paket Premium</div>
+          <div class="plan-tagline dark">Solusi komprehensif untuk hasil maksimal</div>
+          <div class="plan-price">
+            <span class="price-amount dark">Rp 5.500.000</span>
+            <span class="price-unit-text dark"> / peserta</span>
+          </div>
+          <div class="price-note dark">Termasuk semua benefit Reguler + fasilitas eksklusif</div>
+        </div>
+        <div class="card-body">
+          <ul class="features-list">
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Pelatihan 40 JP (5 hari) — kelas eksklusif max 20 orang</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Uji Kompetensi KAN (tertulis + wawancara)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Sertifikat Kompetensi + gelar non-akademik</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Modul digital + rekaman video pelatihan <span class="feat-badge">EKSKLUSIF</span></span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Template dokumen lengkap (50+ template)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Akses forum alumni WhatsApp</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Pendampingan implementasi (3 sesi × 2 jam) <span class="feat-badge">+ BONUS</span></span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Konsultasi on-call 6 bulan (WA + Zoom)</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Akses AMI Digital gratis 1 semester</span>
+            </li>
+            <li class="feature-item">
+              <div class="feat-check">✓</div>
+              <span class="feat-text">Report mutu prodi setelah pendampingan</span>
+            </li>
+          </ul>
+          <a href="redesign-konsultasi-gratis.html" class="btn-premium">Daftar Paket Premium</a>
+          <div class="btn-note" style="color:var(--gray-500);">atau <a href="https://wa.me/6281286563234" style="color:var(--navy-700);font-weight:600;">tanya dulu via WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VALUE PROP EXTRA -->
+    <div style="background:var(--gold-100);border:1px solid var(--gold-200);border-radius:var(--radius-lg);padding:24px 32px;max-width:900px;margin:28px auto 0;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+      <div style="font-size:2.5rem;">💡</div>
+      <div style="flex:1;">
+        <strong style="color:var(--navy-800);font-family:var(--font-display);font-size:1rem;">Tidak yakin mana yang cocok?</strong>
+        <p style="font-size:.875rem;color:var(--gray-700);margin-top:4px;">Konsultasi gratis dengan tim kami. Kami akan membantu Anda memilih paket yang paling sesuai dengan kebutuhan dan anggaran kampus, tanpa tekanan.</p>
+      </div>
+      <a href="redesign-konsultasi-gratis.html" style="background:var(--navy-800);color:var(--white);padding:12px 24px;border-radius:var(--radius-sm);font-weight:700;font-size:.875rem;white-space:nowrap;font-family:var(--font-display);">Konsultasi Gratis</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="comparison">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">Perbandingan Lengkap</div>
+      <h2 class="section-title">Reguler vs. Premium — Detail</h2>
+    </div>
+    <div style="overflow-x:auto;margin-top:0;">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th style="width:50%;">Fitur / Manfaat</th>
+            <th class="reg-col" style="width:25%;">📘 Reguler<br><small style="font-size:.78rem;color:var(--gray-500);font-weight:400;">Rp 3.750.000</small></th>
+            <th class="prem-col" style="width:25%;">⭐ Premium<br><small>Rp 5.500.000</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="section-divider">
+            <td colspan="3">📚 PELATIHAN</td>
+          </tr>
+          <tr>
+            <td>Durasi pelatihan</td>
+            <td>40 JP (5 hari)</td>
+            <td>40 JP (5 hari)</td>
+          </tr>
+          <tr>
+            <td>Ukuran kelas</td>
+            <td>Max 40 peserta</td>
+            <td><strong>Max 20 peserta</strong></td>
+          </tr>
+          <tr>
+            <td>Trainer bersertifikat KAN</td>
+            <td><span class="check-yes">✓</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Rekaman video pelatihan</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span> <span class="tag-added">EKSKLUSIF</span></td>
+          </tr>
+          <tr class="section-divider">
+            <td colspan="3">📜 SERTIFIKASI</td>
+          </tr>
+          <tr>
+            <td>Uji Kompetensi KAN</td>
+            <td><span class="check-yes">✓</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Sertifikat Kompetensi resmi</td>
+            <td><span class="check-yes">✓</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Gelar non-akademik (CQAI/CQAA/dll)</td>
+            <td><span class="check-yes">✓</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Framing sertifikat</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr class="section-divider">
+            <td colspan="3">📦 MATERI & TEMPLATE</td>
+          </tr>
+          <tr>
+            <td>Modul pelatihan digital (PDF)</td>
+            <td><span class="check-yes">✓</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Template dokumen</td>
+            <td>10 template</td>
+            <td><span class="tag-unlim">50+ template</span></td>
+          </tr>
+          <tr>
+            <td>E-book referensi</td>
+            <td>2 e-book</td>
+            <td>10+ e-book</td>
+          </tr>
+          <tr class="section-divider">
+            <td colspan="3">🤝 PENDAMPINGAN PASCA PELATIHAN</td>
+          </tr>
+          <tr>
+            <td>Sesi pendampingan implementasi</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span> 3 sesi × 2 jam</td>
+          </tr>
+          <tr>
+            <td>Konsultasi on-call (WA)</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span> 6 bulan</td>
+          </tr>
+          <tr>
+            <td>Review dokumen SPMI</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span> 1 kali</td>
+          </tr>
+          <tr>
+            <td>Report mutu prodi</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr class="section-divider">
+            <td colspan="3">💻 AKSES DIGITAL</td>
+          </tr>
+          <tr>
+            <td>Akses forum alumni WhatsApp</td>
+            <td><span class="check-yes">✓</span></td>
+            <td><span class="check-yes">✓</span></td>
+          </tr>
+          <tr>
+            <td>Akses AMI Digital</td>
+            <td><span class="check-no">—</span></td>
+            <td><span class="check-yes">✓</span> 1 semester gratis</td>
+          </tr>
+          <tr>
+            <td>Akses resource library</td>
+            <td>Terbatas</td>
+            <td><span class="tag-unlim">Unlimited</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ PAKET -->
+<section class="faq-paket">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto;">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Pertanyaan Seputar Paket</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>Apakah harga sudah termasuk konsumsi & penginapan?</h4>
+        <p>Harga sudah termasuk snack dan makan siang selama pelatihan. Penginapan tidak termasuk — tim kami bisa rekomendasikan hotel di sekitar lokasi pelatihan.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Bolehkah mengirim lebih dari 1 peserta dari kampus yang sama?</h4>
+        <p>Boleh! Bahkan kami memberikan diskon khusus: kirim 5+ peserta diskon 10%, kirim 10+ peserta diskon 15%. Hubungi kami untuk penawaran institusi.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Bagaimana jika peserta tidak lulus uji kompetensi?</h4>
+        <p>Peserta mendapat 1x kesempatan ujian remedial gratis. Jika masih belum lulus pada remedial, akan dijadwalkan ulang tanpa biaya tambahan.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Apakah bisa diikuti secara online?</h4>
+        <p>Ya, kami menawarkan mode hybrid (online + offline). Mode online tersedia untuk peserta di luar Jawa. Kualitas materi dan sertifikat tetap sama.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Berapa lama sertifikat berlaku?</h4>
+        <p>Sertifikat kompetensi KAN berlaku 3 tahun dan dapat diperpanjang melalui rekertifikasi. Kami juga akan mengingatkan Anda 3 bulan sebelum masa berlaku habis.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Metode pembayaran apa yang diterima?</h4>
+        <p>Transfer bank (BCA, Mandiri, BNI, BRI), virtual account, QRIS, dan kartu kredit. Bisa juga cicilan 2-3 bulan melalui Kredivo / Atome untuk individu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE / IN-HOUSE -->
+<section class="enterprise">
+  <div class="container">
+    <div class="ent-inner">
+      <div class="ent-text">
+        <h2>Butuh Pelatihan In-House untuk 20+ Orang?</h2>
+        <p>Kami menawarkan paket In-House Training yang bisa disesuaikan dengan jadwal, lokasi, dan kebutuhan spesifik kampus Anda. Lebih hemat, lebih fleksibel.</p>
+        <div class="ent-features">
+          <div class="ent-feat">Trainer datang ke kampus Anda</div>
+          <div class="ent-feat">Jadwal fleksibel sesuai kalender akademik</div>
+          <div class="ent-feat">Diskon 20-40% vs. paket reguler</div>
+          <div class="ent-feat">Dapat dikustomisasi per kebutuhan kampus</div>
+        </div>
+      </div>
+      <div class="ent-cta">
+        <a href="redesign-konsultasi-gratis.html" class="btn-gold-lg">Request Penawaran IHT</a>
+        <a href="https://wa.me/6281286563234" class="btn-wh-outline">💬 WhatsApp Langsung</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>mutuperguruantinggi.id</h4>
+        <p>Platform pionir peningkatan mutu perguruan tinggi Indonesia. Didukung 12 pakar bersertifikasi internasional.</p>
+        <p style="margin-top:12px;">Kompleks Ruko Bali, Jl. Teras Bali No.12, Mijen, Semarang 50216</p>
+      </div>
+      <div class="footer-col">
+        <h5>Layanan</h5>
+        <ul>
+          <li><a href="redesign-sertifikasi-detail.html">Sertifikasi KAN</a></li>
+          <li><a href="redesign-ami-digital.html">AMI Digital</a></li>
+          <li><a href="redesign-paket.html">Paket Harga</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Event</h5>
+        <ul>
+          <li><a href="redesign-event-listing.html">Jadwal Event</a></li>
+          <li><a href="#">Webinar Gratis</a></li>
+          <li><a href="#">Bootcamp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontak</h5>
+        <ul>
+          <li><a href="tel:+6281286563234">+62 812-8656-3234</a></li>
+          <li><a href="mailto:info@mutuperguruantinggi.id">Email Kami</a></li>
+          <li><a href="redesign-konsultasi-gratis.html">Konsultasi Gratis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PT Padma Global Nusatama. Hak cipta dilindungi.</span>
+      <div style="display:flex;gap:16px;">
+        <a href="#" style="color:var(--gold-500);">Kebijakan Privasi</a>
+        <a href="#" style="color:var(--gold-500);">Syarat & Ketentuan</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
