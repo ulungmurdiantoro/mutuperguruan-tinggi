@@ -43,14 +43,28 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.2;colo
 .container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
 
 nav{background:var(--white);border-bottom:1px solid var(--navy-100);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max-w);margin:0 auto;}
-.nav-logo{display:flex;align-items:center;gap:10px;}
-.nav-logo img{height:38px;}
-.nav-logo span{font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--navy-800);}
-.nav-links{display:flex;gap:28px;align-items:center;}
-.nav-links a{font-size:.9rem;font-weight:600;color:var(--gray-700);}
-.nav-links a.active,.nav-links a:hover{color:var(--navy-800);}
-.nav-cta{background:var(--gold-500);color:var(--navy-900);padding:10px 20px;border-radius:var(--radius-sm);font-size:.9rem;font-weight:700;}
+/* NAV */
+.nav-wrap{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-100);position:sticky;top:0;z-index:100;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--max-w);margin:0 auto;}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--navy-800);}
+.logo img{height:40px;width:auto;object-fit:contain;}
+.logo-icon{width:40px;height:40px;background:var(--navy-800);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.logo-icon::before{content:'';width:18px;height:12px;border-radius:2px 2px 0 0;background:var(--white);position:absolute;top:9px;}
+.logo-icon::after{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold-500);position:absolute;top:12px;}
+.logo span:last-child{font-size:11px;font-weight:500;color:var(--gray-500);display:block;margin-top:-2px;}
+.nav-menu{display:flex;gap:6px;align-items:center;list-style:none;}
+.nav-menu>li>a{display:block;padding:10px 14px;font-size:14px;font-weight:500;color:var(--gray-700);border-radius:var(--radius-sm);transition:all .2s;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--navy-50);color:var(--navy-800);}
+.nav-menu .has-sub>a::after{content:' ▾';font-size:10px;opacity:.6;}
+.submenu{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);box-shadow:var(--shadow-lg);padding:8px;min-width:260px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .2s;list-style:none;z-index:50;}
+.has-sub:hover .submenu{opacity:1;visibility:visible;transform:translateY(0);}
+.submenu li a{display:block;padding:10px 12px;font-size:13px;color:var(--gray-700);border-radius:var(--radius-sm);}
+.submenu li a:hover{background:var(--navy-50);color:var(--navy-800);}
+.nav-menu li{position:relative;}
+.nav-cta{display:flex;gap:10px;align-items:center;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:var(--radius-sm);font-family:var(--font-body);font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s;text-decoration:none;white-space:nowrap;}
+.btn-primary{background:var(--gold-500);color:var(--navy-900);box-shadow:0 8px 25px rgba(255,199,44,.35);}
+.btn-primary:hover{background:var(--gold-400);transform:translateY(-1px);}
 
 .breadcrumb{background:var(--navy-50);border-bottom:1px solid var(--navy-100);padding:12px 0;}
 .breadcrumb-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--gray-500);}
@@ -156,25 +170,44 @@ footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:40px 0 20px
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <div class="nav-logo">
-      <img src="LOGO-MUTU-PERGURUAN-TINGGI-17032025.png" alt="Logo" onerror="this.style.display='none'">
-      <span>mutuperguruantinggi.id</span>
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="index.html" class="logo">
+      <img src="LOGO-MUTU-PERGURUAN-TINGGI-17032025.png" alt="mutuperguruantinggi.id" width="40" height="40" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-icon" style="display:none"></div>
+      <div>
+        <div>mutuperguruantinggi.id</div>
+        <span>develop education, develop the nation</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li class="has-sub">
+        <a href="redesign-layanan.html">Layanan</a>
+        <ul class="submenu">
+          <li><a href="redesign-sertifikasi-detail.html">Sertifikasi KAN</a></li>
+          <li><a href="redesign-ami-digital.html">AMI Digital</a></li>
+          <li><a href="redesign-layanan.html">Pendampingan SPMI</a></li>
+          <li><a href="redesign-layanan.html">Kurikulum OBE</a></li>
+          <li><a href="redesign-layanan.html">Akreditasi Internasional</a></li>
+          <li><a href="redesign-layanan.html">ISO 21001 & ISO 9001</a></li>
+        </ul>
+      </li>
+      <li><a href="redesign-paket.html">Paket</a></li>
+      <li><a href="redesign-event-listing.html">Event</a></li>
+      <li><a href="redesign-pakar.html" class="active">Pakar</a></li>
+      <li><a href="redesign-studi-kasus.html">Studi Kasus</a></li>
+      <li><a href="redesign-artikel.html">Artikel</a></li>
+      <li><a href="redesign-tentang.html">Tentang</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="redesign-konsultasi-gratis.html" class="btn btn-primary">Konsultasi Gratis</a>
     </div>
-    <div class="nav-links">
-      <a href="redesign-mutuperguruantinggi.html">Beranda</a>
-      <a href="redesign-tentang.html">Tentang</a>
-      <a href="redesign-layanan.html">Layanan</a>
-      <a href="redesign-pakar.html" class="active">Pakar</a>
-      <a href="redesign-konsultasi-gratis.html" class="nav-cta">Konsultasi Gratis</a>
-    </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 <div class="breadcrumb">
   <div class="breadcrumb-inner">
-    <a href="redesign-mutuperguruantinggi.html">Beranda</a> <span>›</span>
+    <a href="index.html">Beranda</a> <span>›</span>
     <span>Pakar Kami</span>
   </div>
 </div>
