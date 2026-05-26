@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jadwal event, pelatihan, webinar, bootcamp, dan sertifikasi mutu perguruan tinggi 2026. Filter by kategori, tanggal, dan lokasi.">
+<title>Event & Pelatihan 2026 — Webinar, Bootcamp, Sertifikasi | mutuperguruantinggi.id</title>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Event & Pelatihan mutuperguruantinggi.id 2026",
+  "description": "Daftar webinar, bootcamp, dan sertifikasi mutu perguruan tinggi",
+  "url": "https://mutuperguruantinggi.id/event"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy-900:#061A40; --navy-800:#0A2558; --navy-700:#143875;
+  --navy-600:#1E5BA8; --navy-100:#E8EEF8; --navy-50:#F4F7FC;
+  --gold-500:#FFC72C; --gold-400:#FFD55E; --gold-100:#FFF4D1;
+  --green-success:#2E9D5A; --white:#FFFFFF;
+  --gray-900:#1A1A1A; --gray-700:#4A4A4A; --gray-500:#888888;
+  --gray-300:#D5D5D5; --gray-100:#F4F4F4; --gray-50:#FAFAFA;
+  --font-display:'Manrope',system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius-sm:6px; --radius-md:12px; --radius-lg:20px; --radius-xl:28px;
+  --shadow-sm:0 1px 2px rgba(10,37,88,.06),0 2px 4px rgba(10,37,88,.04);
+  --shadow-md:0 4px 6px rgba(10,37,88,.07),0 10px 20px rgba(10,37,88,.05);
+  --shadow-lg:0 10px 25px rgba(10,37,88,.10),0 20px 40px rgba(10,37,88,.08);
+  --shadow-gold:0 8px 25px rgba(255,199,44,.35);
+  --max-w:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);color:var(--gray-900);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.2;color:var(--navy-800);letter-spacing:-.02em;}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+
+/* NAV */
+.announce{background:linear-gradient(90deg,var(--navy-900),var(--navy-700));color:var(--white);font-size:13px;padding:10px 24px;text-align:center;}
+.announce strong{color:var(--gold-500);}
+.nav-wrap{background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-100);position:sticky;top:0;z-index:100;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--max-w);margin:0 auto;}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--navy-800);}
+.logo-icon{width:40px;height:40px;background:var(--navy-800);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.logo-icon::before{content:'';width:18px;height:12px;border-radius:2px 2px 0 0;background:var(--white);position:absolute;top:9px;}
+.logo-icon::after{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold-500);position:absolute;top:12px;}
+.logo span:last-child{font-size:11px;font-weight:500;color:var(--gray-500);display:block;margin-top:-2px;}
+.nav-menu{display:flex;gap:6px;list-style:none;align-items:center;}
+.nav-menu>li>a{display:block;padding:10px 14px;font-size:14px;font-weight:500;color:var(--gray-700);border-radius:var(--radius-sm);transition:all .2s;}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--navy-50);color:var(--navy-800);}
+.nav-menu li{position:relative;}
+.has-sub>a::after{content:' ▾';font-size:10px;opacity:.6;}
+.submenu{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);box-shadow:var(--shadow-lg);padding:8px;min-width:220px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .2s;list-style:none;z-index:50;}
+.has-sub:hover .submenu{opacity:1;visibility:visible;transform:translateY(0);}
+.submenu li a{display:block;padding:10px 12px;font-size:13px;color:var(--gray-700);border-radius:var(--radius-sm);}
+.submenu li a:hover{background:var(--navy-50);color:var(--navy-800);}
+.nav-cta{display:flex;gap:10px;align-items:center;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:var(--radius-sm);font-family:var(--font-body);font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s;text-decoration:none;white-space:nowrap;}
+.btn-primary{background:var(--gold-500);color:var(--navy-900);box-shadow:var(--shadow-gold);}
+.btn-primary:hover{background:var(--gold-400);transform:translateY(-1px);}
+.btn-outline{background:transparent;color:var(--navy-800);border:1.5px solid var(--navy-800);}
+.btn-outline:hover{background:var(--navy-800);color:var(--white);}
+.btn-outline-white{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.4);}
+.btn-outline-white:hover{background:var(--white);color:var(--navy-800);}
+.btn-ghost{background:transparent;color:var(--navy-800);}
+.btn-ghost:hover{background:var(--navy-50);}
+.btn-large{padding:14px 28px;font-size:15px;}
+.btn-wa{background:#25D366;color:var(--white);}
+.btn-wa:hover{background:#1da355;transform:translateY(-1px);}
+.btn-sm{padding:8px 16px;font-size:13px;}
+
+/* BREADCRUMB */
+.breadcrumb-bar{background:var(--gray-50);border-bottom:1px solid var(--gray-100);padding:12px 0;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-500);}
+.breadcrumb a{color:var(--navy-600);}
+.breadcrumb .sep{color:var(--gray-300);}
+.breadcrumb .current{color:var(--gray-700);font-weight:500;}
+
+/* ============================================
+   HERO EVENT LISTING
+   ============================================ */
+.hero-event{
+  background:linear-gradient(135deg,var(--navy-900) 0%,var(--navy-800) 100%);
+  color:var(--white);padding:50px 0 60px;position:relative;overflow:hidden;
+}
+.hero-event::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;}
+.hero-event-inner{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;}
+.hero-event-left h1{font-size:clamp(28px,4vw,44px);color:var(--white);font-weight:800;margin-bottom:10px;}
+.hero-event-left p{font-size:16px;color:rgba(255,255,255,.8);max-width:500px;}
+.hero-event-right{display:flex;gap:16px;flex-wrap:wrap;}
+.hero-stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-md);padding:18px 24px;text-align:center;}
+.hero-stat .num{font-size:28px;font-weight:800;font-family:var(--font-display);color:var(--gold-500);}
+.hero-stat .label{font-size:12px;color:rgba(255,255,255,.7);margin-top:2px;}
+
+/* SEARCH BAR */
+.search-bar-section{background:var(--white);padding:28px 0;border-bottom:1px solid var(--gray-100);position:sticky;top:73px;z-index:90;}
+.search-bar-inner{display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.search-input-wrap{flex:1;min-width:260px;position:relative;}
+.search-input-wrap input{width:100%;padding:12px 16px 12px 44px;border:1.5px solid var(--gray-300);border-radius:var(--radius-md);font-family:var(--font-body);font-size:14px;color:var(--gray-900);outline:none;transition:border-color .2s;}
+.search-input-wrap input:focus{border-color:var(--navy-600);}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--gray-500);font-size:16px;}
+.sort-select{padding:12px 16px;border:1.5px solid var(--gray-300);border-radius:var(--radius-md);font-family:var(--font-body);font-size:14px;color:var(--gray-700);outline:none;cursor:pointer;background:var(--white);}
+.result-count{font-size:14px;color:var(--gray-700);}
+.result-count strong{color:var(--navy-800);}
+
+/* ============================================
+   MAIN LAYOUT: SIDEBAR + GRID
+   ============================================ */
+.event-layout{display:grid;grid-template-columns:260px 1fr;gap:36px;padding:40px 0 60px;}
+
+/* FILTER SIDEBAR */
+.filter-sidebar{}
+.filter-sidebar-inner{position:sticky;top:156px;}
+.filter-section-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray-500);margin-bottom:14px;margin-top:24px;}
+.filter-section-title:first-child{margin-top:0;}
+.filter-group{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.filter-check{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.filter-check input[type=checkbox]{width:16px;height:16px;accent-color:var(--navy-800);cursor:pointer;}
+.filter-check label{font-size:14px;color:var(--gray-700);cursor:pointer;}
+.filter-check .count{font-size:12px;color:var(--gray-500);margin-left:auto;}
+.filter-divider{border:none;border-top:1px solid var(--gray-100);margin:20px 0;}
+.filter-reset{font-size:13px;color:var(--navy-600);font-weight:600;cursor:pointer;background:none;border:none;padding:0;}
+.filter-reset:hover{text-decoration:underline;}
+.filter-month-select{width:100%;padding:10px 14px;border:1.5px solid var(--gray-300);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:14px;color:var(--gray-700);outline:none;}
+.filter-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.filter-tag-pill{padding:6px 14px;border-radius:50px;border:1.5px solid var(--gray-300);font-size:13px;font-weight:500;color:var(--gray-700);cursor:pointer;background:var(--white);transition:all .2s;}
+.filter-tag-pill:hover{border-color:var(--navy-800);color:var(--navy-800);}
+.filter-tag-pill.active{background:var(--navy-800);color:var(--white);border-color:var(--navy-800);}
+
+/* EVENT GRID */
+.event-main{}
+
+/* FEATURED EVENT (TOP) */
+.featured-event-banner{
+  background:linear-gradient(135deg,var(--navy-800),var(--navy-700));
+  border-radius:var(--radius-xl);
+  padding:32px 36px;
+  display:grid;
+  grid-template-columns:1fr 220px;
+  gap:32px;
+  align-items:center;
+  margin-bottom:32px;
+  position:relative;
+  overflow:hidden;
+}
+.featured-event-banner::after{
+  content:'★ FEATURED';
+  position:absolute;top:20px;right:20px;
+  background:var(--gold-500);color:var(--navy-900);
+  font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;
+  padding:4px 12px;border-radius:50px;
+}
+.featured-event-banner::before{
+  content:'';position:absolute;
+  width:300px;height:300px;border-radius:50%;
+  background:rgba(255,199,44,.05);
+  right:-100px;top:-100px;
+}
+.featured-cat{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:rgba(255,199,44,.15);border:1px solid rgba(255,199,44,.3);color:var(--gold-500);border-radius:50px;font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:14px;}
+.featured-event-banner h3{font-size:22px;color:var(--white);margin-bottom:12px;}
+.featured-meta{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
+.featured-meta-item{display:flex;align-items:center;gap:6px;font-size:13px;color:rgba(255,255,255,.8);}
+.featured-event-banner .btn-primary{background:var(--gold-500);color:var(--navy-900);}
+.featured-visual{background:rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:24px;text-align:center;}
+.featured-visual .big-icon{font-size:48px;margin-bottom:8px;}
+.featured-visual .price{font-size:24px;font-weight:800;font-family:var(--font-display);color:var(--gold-500);}
+.featured-visual .slots{font-size:12px;color:rgba(255,255,255,.6);}
+
+/* CATEGORY TABS */
+.cat-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.cat-tab{padding:8px 18px;border-radius:50px;font-size:13px;font-weight:600;border:1.5px solid var(--gray-300);color:var(--gray-700);cursor:pointer;transition:all .2s;background:var(--white);}
+.cat-tab:hover{border-color:var(--navy-800);color:var(--navy-800);}
+.cat-tab.active{background:var(--navy-800);color:var(--white);border-color:var(--navy-800);}
+.cat-count{font-size:11px;opacity:.7;margin-left:4px;}
+
+/* EVENT CARDS GRID */
+.event-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:32px;}
+.event-card{
+  background:var(--white);
+  border:1px solid var(--gray-100);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  transition:all .25s;
+}
+.event-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:transparent;}
+.event-card-thumb{
+  height:160px;
+  background:linear-gradient(135deg,var(--navy-800),var(--navy-700));
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.event-card-thumb.gold{background:linear-gradient(135deg,#9A6D00,var(--gold-500));}
+.event-card-thumb.teal{background:linear-gradient(135deg,#0A5C61,#0EA5E9);}
+.event-card-thumb.purple{background:linear-gradient(135deg,#4A1C8C,#8B5CF6);}
+.thumb-icon{font-size:56px;opacity:.8;}
+.thumb-date{
+  position:absolute;top:12px;left:12px;
+  background:var(--white);border-radius:10px;padding:8px 12px;text-align:center;
+  min-width:52px;
+}
+.thumb-date .day{font-size:22px;font-weight:800;font-family:var(--font-display);color:var(--navy-800);line-height:1;}
+.thumb-date .mon{font-size:10px;font-weight:700;color:var(--gray-700);text-transform:uppercase;}
+.thumb-badge{position:absolute;top:12px;right:12px;padding:4px 10px;border-radius:50px;font-size:10px;font-weight:700;text-transform:uppercase;}
+.badge-free{background:#E8F8EF;color:var(--green-success);}
+.badge-paid{background:var(--navy-800);color:var(--white);}
+.badge-almost-full{background:#FDECEA;color:#C62828;}
+.badge-new{background:var(--gold-500);color:var(--navy-900);}
+.event-card-body{padding:20px;}
+.event-cat-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--navy-600);margin-bottom:8px;}
+.event-card-body h4{font-size:15px;margin-bottom:10px;line-height:1.4;}
+.event-meta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px;}
+.event-meta-item{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--gray-700);}
+.event-meta-icon{font-size:13px;}
+.event-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--gray-100);}
+.event-price{font-size:16px;font-weight:800;font-family:var(--font-display);color:var(--navy-800);}
+.event-price .free{color:var(--green-success);}
+.event-price .per{font-size:11px;font-weight:500;color:var(--gray-500);}
+.event-slot{font-size:12px;color:var(--gray-700);}
+.event-slot.low{color:#E53935;font-weight:600;}
+
+/* PAGINATION */
+.pagination{display:flex;gap:8px;align-items:center;justify-content:center;padding:16px 0;}
+.page-btn{width:40px;height:40px;border:1.5px solid var(--gray-300);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:var(--gray-700);cursor:pointer;transition:all .2s;background:var(--white);}
+.page-btn:hover{border-color:var(--navy-800);color:var(--navy-800);}
+.page-btn.active{background:var(--navy-800);color:var(--white);border-color:var(--navy-800);}
+.page-btn.arrow{width:auto;padding:0 14px;gap:6px;}
+
+/* SIDEBAR PROMO WIDGETS */
+.sidebar-widget{background:var(--gray-50);border-radius:var(--radius-lg);padding:20px;margin-bottom:20px;}
+.sidebar-widget h4{font-size:14px;font-weight:700;color:var(--navy-800);margin-bottom:14px;}
+.newsletter-widget{background:var(--navy-800);color:var(--white);}
+.newsletter-widget h4{color:var(--white);}
+.newsletter-widget p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:14px;}
+.newsletter-input{width:100%;padding:10px 14px;border-radius:var(--radius-sm);border:none;font-family:var(--font-body);font-size:13px;margin-bottom:10px;}
+.highlight-event-list{display:flex;flex-direction:column;gap:10px;}
+.highlight-event-item{display:flex;gap:12px;align-items:flex-start;}
+.highlight-event-date{background:var(--navy-800);color:var(--white);border-radius:8px;padding:6px 10px;text-align:center;min-width:44px;flex-shrink:0;}
+.highlight-event-date .hday{font-size:18px;font-weight:800;font-family:var(--font-display);line-height:1;}
+.highlight-event-date .hmon{font-size:10px;text-transform:uppercase;}
+.highlight-event-info h5{font-size:13px;font-weight:600;color:var(--navy-800);line-height:1.4;margin-bottom:3px;}
+.highlight-event-info span{font-size:11px;color:var(--gray-500);}
+
+/* IHT CTA BANNER */
+.iht-banner{
+  background:linear-gradient(135deg,var(--gold-100),#fff9e8);
+  border:1px solid rgba(255,199,44,.4);
+  border-radius:var(--radius-lg);
+  padding:28px 24px;
+  text-align:center;
+  margin-top:24px;
+}
+.iht-banner h3{font-size:18px;margin-bottom:10px;}
+.iht-banner p{font-size:13px;color:var(--gray-700);margin-bottom:16px;}
+
+/* FOOTER */
+.footer{background:var(--navy-900);color:var(--white);padding:60px 0 0;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+.footer-brand .logo{color:var(--white);margin-bottom:16px;}
+.footer-tagline{font-size:14px;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:20px;max-width:280px;}
+.footer-social{display:flex;gap:10px;}
+.footer-social a{width:36px;height:36px;background:rgba(255,255,255,.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;transition:background .2s;}
+.footer-social a:hover{background:var(--gold-500);color:var(--navy-900);}
+.footer-col h5{font-size:14px;font-weight:700;color:var(--white);margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li a{font-size:13px;color:rgba(255,255,255,.6);transition:color .2s;}
+.footer-col ul li a:hover{color:var(--gold-500);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.45);}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .event-layout{grid-template-columns:1fr;}
+  .filter-sidebar{display:none;}
+  .event-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .event-grid{grid-template-columns:1fr;}
+  .featured-event-banner{grid-template-columns:1fr;}
+  .featured-visual{display:none;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCE -->
+<div class="announce">
+  🎯 <strong>Batch #18 Bootcamp CQAI</strong> — 10–14 Juni 2026 · Online · Tersisa 12 kursi!
+  <a href="redesign-sertifikasi-detail.html">Daftar Sekarang →</a>
+</div>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="redesign-mutuperguruantinggi.html" class="logo">
+      <div class="logo-icon"></div>
+      <div><div>mutuperguruantinggi.id</div><span>develop education, develop the nation</span></div>
+    </a>
+    <ul class="nav-menu">
+      <li class="has-sub">
+        <a href="redesign-layanan.html">Layanan</a>
+        <ul class="submenu">
+          <li><a href="redesign-layanan.html">Semua Layanan</a></li>
+          <li><a href="#">Sertifikasi KAN</a></li>
+          <li><a href="#">AMI Digital</a></li>
+        </ul>
+      </li>
+      <li><a href="redesign-event-listing.html" class="active">Event</a></li>
+      <li><a href="#">Paket</a></li>
+      <li><a href="#">Pakar</a></li>
+      <li><a href="redesign-artikel.html">Artikel</a></li>
+      <li><a href="#">Resource</a></li>
+      <li><a href="#">Tentang</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-ghost">Masuk</a>
+      <a href="#" class="btn btn-primary">Konsultasi Gratis</a>
+    </div>
+  </nav>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="redesign-mutuperguruantinggi.html">Beranda</a>
+      <span class="sep">›</span>
+      <span class="current">Event & Pelatihan</span>
+    </nav>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero-event">
+  <div class="container">
+    <div class="hero-event-inner">
+      <div class="hero-event-left">
+        <h1>Jadwal Event & Pelatihan 2026</h1>
+        <p>Webinar nasional, bootcamp intensif, sertifikasi KAN, dan in-house training — semua untuk pengembangan mutu perguruan tinggi Indonesia.</p>
+      </div>
+      <div class="hero-event-right">
+        <div class="hero-stat"><div class="num">40+</div><div class="label">Event per Tahun</div></div>
+        <div class="hero-stat"><div class="num">6</div><div class="label">Kategori Event</div></div>
+        <div class="hero-stat"><div class="num">3.000+</div><div class="label">Peserta/Tahun</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<div class="search-bar-section">
+  <div class="container">
+    <div class="search-bar-inner">
+      <div class="search-input-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Cari event, pelatihan, atau topik...">
+      </div>
+      <select class="sort-select">
+        <option>Terdekat (by Tanggal)</option>
+        <option>Terbaru Ditambahkan</option>
+        <option>Termurah</option>
+        <option>Paling Populer</option>
+      </select>
+      <span class="result-count">Menampilkan <strong>28 event</strong> dari 40 total</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="container">
+  <div class="event-layout">
+
+    <!-- FILTER SIDEBAR -->
+    <aside class="filter-sidebar">
+      <div class="filter-sidebar-inner">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+          <span style="font-size:15px;font-weight:700;color:var(--navy-800);">Filter</span>
+          <button class="filter-reset">Reset semua</button>
+        </div>
+
+        <p class="filter-section-title">Kategori</p>
+        <div class="filter-group">
+          <label class="filter-check">
+            <input type="checkbox" checked>
+            <label>Semua Kategori</label>
+            <span class="count">(28)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox" checked>
+            <label>Bootcamp / Sertifikasi</label>
+            <span class="count">(8)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Webinar Nasional</label>
+            <span class="count">(12)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>In-House Training</label>
+            <span class="count">(4)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Workshop</label>
+            <span class="count">(3)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Seminar / Konferensi</label>
+            <span class="count">(1)</span>
+          </label>
+        </div>
+
+        <hr class="filter-divider">
+        <p class="filter-section-title">Bulan</p>
+        <select class="filter-month-select">
+          <option>Semua Bulan</option>
+          <option selected>Juni 2026</option>
+          <option>Juli 2026</option>
+          <option>Agustus 2026</option>
+          <option>September 2026</option>
+          <option>Oktober 2026</option>
+          <option>November 2026</option>
+          <option>Desember 2026</option>
+        </select>
+
+        <hr class="filter-divider">
+        <p class="filter-section-title">Lokasi / Format</p>
+        <div class="filter-group">
+          <label class="filter-check">
+            <input type="checkbox" checked>
+            <label>Online (Zoom)</label>
+            <span class="count">(18)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Offline (Semarang)</label>
+            <span class="count">(6)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Offline (Jakarta)</label>
+            <span class="count">(3)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Hybrid</label>
+            <span class="count">(1)</span>
+          </label>
+        </div>
+
+        <hr class="filter-divider">
+        <p class="filter-section-title">Harga</p>
+        <div class="filter-group">
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Gratis</label>
+            <span class="count">(5)</span>
+          </label>
+          <label class="filter-check">
+            <input type="checkbox">
+            <label>Berbayar</label>
+            <span class="count">(23)</span>
+          </label>
+        </div>
+
+        <hr class="filter-divider">
+        <p class="filter-section-title">Topik</p>
+        <div class="filter-tags">
+          <span class="filter-tag-pill active">SPMI</span>
+          <span class="filter-tag-pill">AMI</span>
+          <span class="filter-tag-pill">OBE</span>
+          <span class="filter-tag-pill">ISO 21001</span>
+          <span class="filter-tag-pill">Akreditasi</span>
+          <span class="filter-tag-pill">Tata Kelola</span>
+          <span class="filter-tag-pill">Lab 17025</span>
+        </div>
+
+        <hr class="filter-divider">
+        <div class="iht-banner">
+          <h3>Ingin IHT?</h3>
+          <p>Jadwalkan pelatihan khusus di kampus Anda. Minimal 15 peserta.</p>
+          <a href="https://api.whatsapp.com/send/?phone=6281286563234" class="btn btn-wa" style="width:100%;justify-content:center;">💬 Hubungi Kami</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- EVENT MAIN CONTENT -->
+    <main class="event-main">
+
+      <!-- FEATURED EVENT -->
+      <div class="featured-event-banner">
+        <div>
+          <div class="featured-cat">🏆 Bootcamp · Sertifikasi KAN</div>
+          <h3>Bootcamp Lead Implementer SPMI<br>Terintegrasi ISO 21001 — Batch #18</h3>
+          <div class="featured-meta">
+            <div class="featured-meta-item">📅 10–14 Juni 2026</div>
+            <div class="featured-meta-item">🌐 Online (Zoom)</div>
+            <div class="featured-meta-item">⏱ 40 JP Intensif</div>
+            <div class="featured-meta-item">🎓 Gelar CQAI</div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="redesign-event-detail.html" class="btn btn-primary">Lihat Detail & Daftar</a>
+            <a href="https://api.whatsapp.com/send/?phone=6281286563234" class="btn btn-outline-white btn-sm">💬 Tanya WA</a>
+          </div>
+        </div>
+        <div class="featured-visual">
+          <div class="big-icon">🎓</div>
+          <div class="price">Rp 3,75jt</div>
+          <div class="slots" style="color:var(--gold-400);font-weight:600;margin-top:4px;">🔥 12 kursi tersisa!</div>
+        </div>
+      </div>
+
+      <!-- CATEGORY TABS -->
+      <div class="cat-tabs">
+        <button class="cat-tab active">Semua <span class="cat-count">(28)</span></button>
+        <button class="cat-tab">Bootcamp <span class="cat-count">(8)</span></button>
+        <button class="cat-tab">Webinar <span class="cat-count">(12)</span></button>
+        <button class="cat-tab">Workshop <span class="cat-count">(3)</span></button>
+        <button class="cat-tab">IHT <span class="cat-count">(4)</span></button>
+        <button class="cat-tab">Gratis <span class="cat-count">(5)</span></button>
+      </div>
+
+      <!-- EVENT GRID -->
+      <div class="event-grid">
+
+        <!-- Card 1 -->
+        <a href="redesign-event-detail.html" class="event-card">
+          <div class="event-card-thumb">
+            <div class="thumb-icon">📋</div>
+            <div class="thumb-date"><div class="day">10</div><div class="mon">Jun</div></div>
+            <span class="thumb-badge badge-almost-full">Hampir Penuh</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">🎓 Bootcamp · Sertifikasi KAN</div>
+            <h4>Lead Implementer SPMI ISO 21001 — Batch #18 (CQAI)</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>10–14 Jun 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">🌐</span>Online</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>40 JP</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price">Rp 3.750.000<span class="per">/peserta</span></div>
+              <span class="event-slot low">12 kursi tersisa</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="redesign-event-detail.html" class="event-card">
+          <div class="event-card-thumb gold">
+            <div class="thumb-icon">📊</div>
+            <div class="thumb-date"><div class="day">18</div><div class="mon">Jun</div></div>
+            <span class="thumb-badge badge-free">Gratis</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">📡 Webinar Nasional</div>
+            <h4>Webinar: Implementasi Permendiktisaintek No. 39/2025 — Panduan Praktis Bagi LPM</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>18 Jun 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">🌐</span>Online</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>3 Jam</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price"><span class="free">GRATIS</span></div>
+              <span class="event-slot">245 peserta terdaftar</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="redesign-event-detail.html" class="event-card">
+          <div class="event-card-thumb teal">
+            <div class="thumb-icon">✅</div>
+            <div class="thumb-date"><div class="day">24</div><div class="mon">Jun</div></div>
+            <span class="thumb-badge badge-paid">Berbayar</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">🔍 Bootcamp · Sertifikasi KAN</div>
+            <h4>Auditor Internal SPMI Terintegrasi ISO 21001 — Batch #12 (CQAA)</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>24–28 Jun 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">🌐</span>Online</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>40 JP</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price">Rp 3.750.000<span class="per">/peserta</span></div>
+              <span class="event-slot">28 kursi tersisa</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="#" class="event-card">
+          <div class="event-card-thumb purple">
+            <div class="thumb-icon">🎓</div>
+            <div class="thumb-date"><div class="day">1</div><div class="mon">Jul</div></div>
+            <span class="thumb-badge badge-paid">Berbayar</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">📚 Workshop</div>
+            <h4>Workshop Penyusunan Kurikulum OBE (Outcome-Based Education) untuk Prodi S1 & S2</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>1–2 Jul 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">📍</span>Semarang</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>16 JP</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price">Rp 1.750.000<span class="per">/peserta</span></div>
+              <span class="event-slot">35 kursi tersisa</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="#" class="event-card">
+          <div class="event-card-thumb">
+            <div class="thumb-icon">🏛️</div>
+            <div class="thumb-date"><div class="day">8</div><div class="mon">Jul</div></div>
+            <span class="thumb-badge badge-paid">Berbayar</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">🎓 Bootcamp · Sertifikasi KAN</div>
+            <h4>Lead Implementer SPMI ISO 21001 — Batch #19 (Offline, Semarang)</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>8–12 Jul 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">📍</span>Semarang</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>40 JP</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price">Rp 4.250.000<span class="per">/peserta</span></div>
+              <span class="event-slot">30 kursi tersisa</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="#" class="event-card">
+          <div class="event-card-thumb gold">
+            <div class="thumb-icon">🔬</div>
+            <div class="thumb-date"><div class="day">15</div><div class="mon">Jul</div></div>
+            <span class="thumb-badge badge-new">Baru</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">🎓 Bootcamp · Sertifikasi KAN</div>
+            <h4>ToT Outcome-Based Education (COBE-T) — Batch #8 Khusus Dosen Vokasi</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>15–19 Jul 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">🌐</span>Online</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>40 JP</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price">Rp 3.750.000<span class="per">/peserta</span></div>
+              <span class="event-slot">40 kursi tersisa</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="#" class="event-card">
+          <div class="event-card-thumb teal">
+            <div class="thumb-icon">📡</div>
+            <div class="thumb-date"><div class="day">22</div><div class="mon">Jul</div></div>
+            <span class="thumb-badge badge-free">Gratis</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">📡 Webinar Nasional</div>
+            <h4>Webinar: Strategi Sukses Akreditasi Unggul — Pengalaman Nyata dari 6 Kampus</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>22 Jul 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">🌐</span>Online</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>3 Jam</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price"><span class="free">GRATIS</span></div>
+              <span class="event-slot">Daftar sekarang</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 8 -->
+        <a href="#" class="event-card">
+          <div class="event-card-thumb purple">
+            <div class="thumb-icon">⚗️</div>
+            <div class="thumb-date"><div class="day">5</div><div class="mon">Agt</div></div>
+            <span class="thumb-badge badge-paid">Berbayar</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-cat-label">🎓 Bootcamp · Sertifikasi KAN</div>
+            <h4>Lead Implementer Laboratorium ISO/IEC 17025 — Batch #5 (CLAI)</h4>
+            <div class="event-meta-row">
+              <div class="event-meta-item"><span class="event-meta-icon">📅</span>5–9 Agt 2026</div>
+              <div class="event-meta-item"><span class="event-meta-icon">🌐</span>Online</div>
+              <div class="event-meta-item"><span class="event-meta-icon">⏱</span>40 JP</div>
+            </div>
+            <div class="event-footer">
+              <div class="event-price">Rp 3.750.000<span class="per">/peserta</span></div>
+              <span class="event-slot">40 kursi tersisa</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <button class="page-btn arrow">← Sebelumnya</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span style="color:var(--gray-500);padding:0 4px;">...</span>
+        <button class="page-btn">7</button>
+        <button class="page-btn arrow">Selanjutnya →</button>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <div><div>mutuperguruantinggi.id</div><span style="color:rgba(255,255,255,.5);">develop education, develop the nation</span></div>
+        </div>
+        <p class="footer-tagline">Platform pionir peningkatan mutu dan tata kelola perguruan tinggi di Indonesia. Bagian dari PT Padma Global Nusatama.</p>
+        <div class="footer-social">
+          <a href="#">📷</a><a href="#">f</a><a href="#">💬</a><a href="#">in</a><a href="#">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Kategori Event</h5>
+        <ul>
+          <li><a href="#">Bootcamp & Sertifikasi</a></li>
+          <li><a href="#">Webinar Nasional</a></li>
+          <li><a href="#">In-House Training</a></li>
+          <li><a href="#">Workshop</a></li>
+          <li><a href="#">Seminar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Layanan</h5>
+        <ul>
+          <li><a href="redesign-layanan.html">Semua Layanan</a></li>
+          <li><a href="redesign-sertifikasi-detail.html">Sertifikasi KAN</a></li>
+          <li><a href="#">AMI Digital</a></li>
+          <li><a href="#">Pendampingan SPMI</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Informasi</h5>
+        <ul>
+          <li><a href="redesign-artikel.html">Artikel & Blog</a></li>
+          <li><a href="#">Resource Gratis</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PT Padma Global Nusatama · mutuperguruantinggi.id</span>
+      <span>📍 Jl. Teras Bali No.12, Mijen, Semarang · 📞 +62-812-8656-3234</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.cat-tab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+document.querySelectorAll('.filter-tag-pill').forEach(pill => {
+  pill.addEventListener('click', function() { this.classList.toggle('active'); });
+});
+</script>
+</body>
+</html>
